@@ -1,0 +1,63 @@
+%packages--MAIN{
+  width: 86%;
+  margin: 2.5rem auto 0;
+  @include breakpoint($breakpoint--second-layout){
+    width: 43%;
+    float: right;
+    display: inline-block;
+    float: left;
+  }
+}
+
+%packages--header{
+  @extend %p;
+  font-weight: bold;
+  width: 100%;
+  float: left;
+  margin: 1rem 0 0.75rem;
+  @include breakpoint($breakpoint--second-layout){
+    text-align: center;
+    float: none;
+    margin: 0;
+  }
+}
+
+%packages--table{
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+%packages--table-row{
+  padding: 1rem;
+  background-color: rgba($medium-purple, 0.2);
+  &:nth-of-type(2n){
+    background-color: $white;
+  }
+
+}
+
+%packages--header-table-row{
+  background-color: $medium-purple;
+  padding: 1rem;
+
+}
+
+%packages--package-table-column{
+  @extend %p;
+  font-weight: bold;
+  margin: 0.75rem 0 0.75rem 1.5rem;
+  display:inline-block;
+
+}
+
+%packages--version-table-column{
+  @extend %p;
+  width: 25%;
+
+}
+
+%packages--date-table-column{
+  @extend %p;
+  width: 25%;
+
+}

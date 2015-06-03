@@ -1,0 +1,27 @@
+//compass files
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/images";
+@import "compass/css3/font-face";
+@import "breakpoint";
+@import "breakpoint";
+
+//global styles
+@import "partials/global/variables/all";
+@import "partials/global/extends/all";
+@import "partials/global/mixins/all";
+
+//components
+
+@import "partials/components/navigation";
+@import "partials/components/banner";
+@import "partials/components/button";
+@import "partials/components/promo-text";
+@import "partials/components/subheader";
+@import "partials/components/release-info";
+@import "partials/components/packages";
+@import "partials/components/footer";
+@import "partials/components/downloads";
+@import "partials/components/site-wrapper";
+
+// use compass watch to compile css

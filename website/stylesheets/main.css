@@ -1,0 +1,827 @@
+/* line 5, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/partials/global/extends/_base.scss */
+.banner--title, .banner--logo:before, .button--DOWNLOAD .button--label, .button--label {
+  color: #FFFFFF;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 3.5rem;
+}
+
+/* line 10, ../sass/partials/global/extends/_base.scss */
+.promo-text--header, .subheader--MAIN, .downloads--header {
+  color: #614273;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+/* line 17, ../sass/partials/global/extends/_base.scss */
+.navigation--MAIN .navigation--links, #navigation--MOBILE .navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--dropdown-header, .downloads--subheader, .downloads--dropdown-text, .downloads--text, .downloads--instructions li {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #323232;
+  font-size: 1.6rem;
+  line-height: 125%;
+  font-weight: normal;
+}
+/* line 23, ../sass/partials/global/extends/_base.scss */
+.navigation--MAIN .navigation--links a, #navigation--MOBILE .navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--dropdown-header a, .downloads--subheader a, .downloads--dropdown-text a, .downloads--text a, .downloads--instructions li a {
+  font-size: 100%;
+  float: inherit;
+  display: inherit;
+  font-family: inherit;
+  color: #614273;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+/* line 33, ../sass/partials/global/extends/_base.scss */
+.navigation--MAIN .navigation--links a:hover, #navigation--MOBILE .navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--dropdown-header a:hover, .downloads--subheader a:hover, .downloads--dropdown-text a:hover, .downloads--text a:hover, .downloads--instructions li a:hover {
+  color: #8a45b5;
+}
+
+/* line 39, ../sass/partials/global/extends/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'Haskell_icon';
+  src: url("fonts/Haskell/fonts/Haskell.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Haskell/fonts/Haskell.woff") format("woff"), url("fonts/Haskell/fonts/Haskell.ttf") format("truetype"), url("fonts/Haskell/fonts/Haskell.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/* line 1, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MAIN {
+  width: 93%;
+  background-color: #482f58;
+  padding: 0 0 0 7%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 5;
+  height: 5.25rem;
+}
+
+/* line 12, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MAIN .navigation--links-list {
+  width: 92%;
+}
+
+/* line 17, ../sass/partials/components/navigation/_extends.scss */
+.navigation--mobile-open, .navigation--mobile-close {
+  font-family: 'Haskell_icon';
+  background: transparent;
+  border: none;
+  color: #482f58;
+}
+/* line 22, ../sass/partials/components/navigation/_extends.scss */
+.navigation--mobile-open:after, .navigation--mobile-close:after {
+  content: "\e606";
+  font-size: 4.5rem;
+  color: #32213d;
+  display: block;
+  position: absolute;
+  left: 7%;
+  top: 0.5rem;
+}
+@media (min-width: 700px) {
+  /* line 17, ../sass/partials/components/navigation/_extends.scss */
+  .navigation--mobile-open, .navigation--mobile-close {
+    display: none;
+  }
+}
+
+/* line 36, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MAIN .navigation--links {
+  color: #FFFFFF;
+  text-align: left;
+  display: none;
+}
+/* line 41, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MAIN .navigation--links:last-child {
+  text-align: center;
+}
+/* line 44, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MAIN .navigation--links a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+}
+/* line 49, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MAIN .navigation--links a:hover {
+  color: #FFFFFF;
+}
+@media (min-width: 700px) {
+  /* line 36, ../sass/partials/components/navigation/_extends.scss */
+  .navigation--MAIN .navigation--links {
+    padding: 1.6rem 0 1.5rem;
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-color 500ms ease;
+    -moz-transition: border-color 500ms ease;
+    -o-transition: border-color 500ms ease;
+    transition: border-color 500ms ease;
+    opacity: 1.0;
+  }
+  /* line 61, ../sass/partials/components/navigation/_extends.scss */
+  .navigation--MAIN .navigation--links:hover {
+    border-bottom: 1px solid #FFFFFF;
+  }
+}
+
+/* line 69, ../sass/partials/components/navigation/_extends.scss */
+#navigation--MOBILE {
+  background-color: #4d335f;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  width: 21rem;
+  left: -21rem;
+  height: 96.23%;
+  position: absolute;
+  padding: 2rem 0;
+  padding: 2rem 0;
+  display: block;
+}
+@media (min-width: 700px) {
+  /* line 69, ../sass/partials/components/navigation/_extends.scss */
+  #navigation--MOBILE {
+    display: none;
+  }
+}
+
+/* line 85, ../sass/partials/components/navigation/_extends.scss */
+#navigation--MOBILE .navigation--links-list {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 91, ../sass/partials/components/navigation/_extends.scss */
+#navigation--MOBILE .navigation--links {
+  color: #FFFFFF;
+  text-align: left;
+  padding: 0 1.25rem;
+  background-color: transparent;
+}
+/* line 97, ../sass/partials/components/navigation/_extends.scss */
+#navigation--MOBILE .navigation--links:hover {
+  -webkit-transition: background-color 500ms ease;
+  -moz-transition: background-color 500ms ease;
+  -o-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+/* line 101, ../sass/partials/components/navigation/_extends.scss */
+#navigation--MOBILE .navigation--links a {
+  text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #614273;
+}
+/* line 110, ../sass/partials/components/navigation/_extends.scss */
+#navigation--MOBILE .navigation--links a:hover {
+  color: #482f58;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: color 500ms ease;
+  -moz-transition: color 500ms ease;
+  -o-transition: color 500ms ease;
+  transition: color 500ms ease;
+}
+
+/* line 13, ../sass/partials/components/_navigation.scss */
+.navigation--MAIN .navigation--links-list:hover > li:hover {
+  opacity: 1.0;
+  -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+/* line 18, ../sass/partials/components/_navigation.scss */
+.navigation--MAIN .navigation--links-list:hover > li {
+  opacity: 0.4;
+  -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+/* line 48, ../sass/partials/components/_navigation.scss */
+.navigation--mobile-close {
+  display: none;
+}
+
+/* line 1, ../sass/partials/components/banner/_extends.scss */
+.banner--MAIN {
+  width: 100%;
+  overflow: hidden;
+  height: 9rem;
+  position: relative;
+  padding-top: 5rem;
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/partials/components/banner/_extends.scss */
+  .banner--MAIN {
+    height: 10rem;
+  }
+}
+
+/* line 12, ../sass/partials/components/banner/_extends.scss */
+.banner--background-image {
+  width: 100%;
+  min-width: 1000px;
+}
+
+/* line 17, ../sass/partials/components/banner/_extends.scss */
+.banner--header {
+  left: 7%;
+  position: absolute;
+  margin-top: 2rem;
+}
+
+/* line 23, ../sass/partials/components/banner/_extends.scss */
+.banner--title {
+  font-weight: bold;
+  top: 1.1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.25em 0 0 0.5rem;
+  letter-spacing: 0.75px;
+  font-size: 1.5rem;
+}
+@media (min-width: 400px) {
+  /* line 23, ../sass/partials/components/banner/_extends.scss */
+  .banner--title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 700px) {
+  /* line 23, ../sass/partials/components/banner/_extends.scss */
+  .banner--title {
+    font-size: 3.5rem;
+  }
+}
+/* line 38, ../sass/partials/components/banner/_extends.scss */
+.banner--title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 45, ../sass/partials/components/banner/_extends.scss */
+.banner--logo:before {
+  font-family: Haskell_icon;
+  content: "\e600";
+  font-size: 2.25rem;
+  display: inline-block;
+}
+@media (min-width: 400px) {
+  /* line 45, ../sass/partials/components/banner/_extends.scss */
+  .banner--logo:before {
+    font-size: 3.58rem;
+  }
+}
+@media (min-width: 700px) {
+  /* line 45, ../sass/partials/components/banner/_extends.scss */
+  .banner--logo:before {
+    font-size: 4.24rem;
+  }
+}
+
+/* line 1, ../sass/partials/components/button/_extends.scss */
+.button--DOWNLOAD, .button--MAIN {
+  width: 86%;
+  margin: 0 7%;
+  background-color: #482f58;
+  border-radius: 1.75rem;
+  padding: 2rem 0;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  margin-bottom: 3.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+  transition: background-color 0.5s ease;
+  text-decoration: none;
+}
+/* line 14, ../sass/partials/components/button/_extends.scss */
+.button--DOWNLOAD:hover, .button--MAIN:hover {
+  background-color: #614273;
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/partials/components/button/_extends.scss */
+  .button--DOWNLOAD, .button--MAIN {
+    width: 60%;
+    margin: 0 20% 6rem 20%;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 1, ../sass/partials/components/button/_extends.scss */
+  .button--DOWNLOAD, .button--MAIN {
+    width: 35%;
+    margin: 0 32.5% 6rem 32.5%;
+  }
+}
+
+/* line 28, ../sass/partials/components/button/_extends.scss */
+.button--DOWNLOAD {
+  padding: 1.25rem 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* line 35, ../sass/partials/components/button/_extends.scss */
+.button--DOWNLOAD .button--label, .button--label {
+  font-size: 2.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 43, ../sass/partials/components/button/_extends.scss */
+.button--DOWNLOAD .button--label {
+  font-size: 1.2rem;
+}
+
+/* line 1, ../sass/partials/components/promo-text/_extends.scss */
+.promo-text--MAIN {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 2rem;
+}
+/* line 6, ../sass/partials/components/promo-text/_extends.scss */
+.promo-text--MAIN:last-child {
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/partials/components/promo-text/_extends.scss */
+  .promo-text--MAIN {
+    width: 31.25%;
+    margin-bottom: 4rem;
+    padding: 0 1.5%;
+  }
+  /* line 13, ../sass/partials/components/promo-text/_extends.scss */
+  .promo-text--MAIN:first-child {
+    padding: 0 1.5% 0 0;
+  }
+  /* line 16, ../sass/partials/components/promo-text/_extends.scss */
+  .promo-text--MAIN:last-child {
+    padding: 0 0 0 1.5%;
+    margin-bottom: 4rem;
+  }
+}
+
+/* line 24, ../sass/partials/components/promo-text/_extends.scss */
+._promo-text--container {
+  margin: 0 auto;
+  width: 86%;
+  overflow: visible;
+  display: block;
+  margin-top: 2rem;
+}
+@media (min-width: 700px) {
+  /* line 24, ../sass/partials/components/promo-text/_extends.scss */
+  ._promo-text--container {
+    margin-top: 3.5rem;
+  }
+}
+
+/* line 36, ../sass/partials/components/promo-text/_extends.scss */
+.promo-text--header {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  /* line 36, ../sass/partials/components/promo-text/_extends.scss */
+  .promo-text--header {
+    text-align: left;
+  }
+}
+
+/* line 1, ../sass/partials/components/subheader/_extends.scss */
+.subheader--MAIN {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 1, ../sass/partials/components/release-info/_extends.scss */
+.release-info--MAIN {
+  width: 86%;
+  display: block;
+  margin: 2em auto 0;
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/partials/components/release-info/_extends.scss */
+  .release-info--MAIN {
+    width: 43%;
+    float: left;
+    display: inline-block;
+    margin: 2.5em 0 0 7%;
+  }
+}
+
+/* line 13, ../sass/partials/components/release-info/_extends.scss */
+.release-info--header {
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  margin-bottom: 1em;
+  clear: left;
+}
+
+/* line 22, ../sass/partials/components/release-info/_extends.scss */
+.release-info--information {
+  float: left;
+  display: inline-block;
+  margin: 0 0 1em 0.75em;
+}
+
+/* line 29, ../sass/partials/components/release-info/_extends.scss */
+.release-info--info-list {
+  float: left;
+  margin: 0 0 1em 0.75em;
+  display: inline-block;
+}
+
+/* line 1, ../sass/partials/components/packages/_extends.scss */
+.packages--MAIN {
+  width: 86%;
+  margin: 2.5rem auto 0;
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/partials/components/packages/_extends.scss */
+  .packages--MAIN {
+    width: 43%;
+    float: right;
+    display: inline-block;
+    float: left;
+  }
+}
+
+/* line 12, ../sass/partials/components/packages/_extends.scss */
+.packages--header {
+  font-weight: bold;
+  width: 100%;
+  float: left;
+  margin: 1rem 0 0.75rem;
+}
+@media (min-width: 700px) {
+  /* line 12, ../sass/partials/components/packages/_extends.scss */
+  .packages--header {
+    text-align: center;
+    float: none;
+    margin: 0;
+  }
+}
+
+/* line 25, ../sass/partials/components/packages/_extends.scss */
+.packages--table {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* line 30, ../sass/partials/components/packages/_extends.scss */
+.packages--table-row {
+  padding: 1rem;
+  background-color: rgba(72, 47, 88, 0.2);
+}
+/* line 33, ../sass/partials/components/packages/_extends.scss */
+.packages--table-row:nth-of-type(2n) {
+  background-color: #FFFFFF;
+}
+
+/* line 39, ../sass/partials/components/packages/_extends.scss */
+.packages--header-table-row {
+  background-color: #482f58;
+  padding: 1rem;
+}
+
+/* line 45, ../sass/partials/components/packages/_extends.scss */
+.packages--package-table-column {
+  font-weight: bold;
+  margin: 0.75rem 0 0.75rem 1.5rem;
+  display: inline-block;
+}
+
+/* line 53, ../sass/partials/components/packages/_extends.scss */
+.packages--version-table-column {
+  width: 25%;
+}
+
+/* line 59, ../sass/partials/components/packages/_extends.scss */
+.packages--date-table-column {
+  width: 25%;
+}
+
+/* line 17, ../sass/partials/components/_packages.scss */
+.packages--header-table-row .packages--package-table-column {
+  color: #FFFFFF;
+}
+/* line 20, ../sass/partials/components/_packages.scss */
+.packages--header-table-row .packages--version-table-column {
+  color: #FFFFFF;
+}
+/* line 23, ../sass/partials/components/_packages.scss */
+.packages--header-table-row .packages--date-table-column {
+  color: #FFFFFF;
+}
+
+/* line 1, ../sass/partials/components/footer/_extends.scss */
+.footer--MAIN {
+  display: inline-block;
+  width: 86%;
+  margin-top: 4rem;
+  position: relative;
+  background-color: #482f58;
+  padding: 0 7% 3rem;
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/partials/components/footer/_extends.scss */
+  .footer--MAIN {
+    margin-top: 6rem;
+    padding: 0 7%;
+  }
+}
+
+/* line 14, ../sass/partials/components/footer/_extends.scss */
+.footer--content {
+  width: 49%;
+  float: left;
+  margin: 1.5rem 0 1rem;
+  text-align: center;
+}
+/* line 19, ../sass/partials/components/footer/_extends.scss */
+.footer--content:nth-child(2n) {
+  float: right;
+}
+@media (min-width: 700px) {
+  /* line 14, ../sass/partials/components/footer/_extends.scss */
+  .footer--content {
+    width: 23%;
+    float: left;
+    margin: 3rem 0 4rem 0;
+    padding: 0 1%;
+    text-align: left;
+  }
+}
+
+/* line 32, ../sass/partials/components/footer/_extends.scss */
+.footer--content-header {
+  font-size: 1.75rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* line 40, ../sass/partials/components/footer/_extends.scss */
+.footer--content-list-link {
+  color: #FFFFFF;
+  line-height: 110%;
+  margin-bottom: 0.4rem;
+}
+/* line 45, ../sass/partials/components/footer/_extends.scss */
+.footer--content-list-link a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+}
+/* line 50, ../sass/partials/components/footer/_extends.scss */
+.footer--content-list-link a:hover {
+  color: #FFFFFF;
+  font-style: italic;
+}
+
+/* line 1, ../sass/partials/components/downloads/_extends.scss */
+.downloads--header {
+  font-size: 2.75rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.75em;
+}
+/* line 7, ../sass/partials/components/downloads/_extends.scss */
+.downloads--header:before {
+  color: #482f58;
+  font-family: 'Haskell_icon';
+  font-size: 3rem;
+  display: inline-block;
+  padding-right: 0.75rem;
+}
+
+/* line 16, ../sass/partials/components/downloads/_extends.scss */
+.downloads--MAC, .downloads--WINDOWS, .downloads--LINUX {
+  width: 86%;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  /* line 16, ../sass/partials/components/downloads/_extends.scss */
+  .downloads--MAC, .downloads--WINDOWS, .downloads--LINUX {
+    width: 50%;
+  }
+}
+
+/* line 25, ../sass/partials/components/downloads/_extends.scss */
+.downloads--MAC .button--DOWNLOAD {
+  width: 49.5%;
+  margin-bottom: 1em;
+  float: left;
+}
+/* line 29, ../sass/partials/components/downloads/_extends.scss */
+.downloads--MAC .button--DOWNLOAD:first-of-type {
+  margin-right: 1%;
+}
+
+/* line 34, ../sass/partials/components/downloads/_extends.scss */
+.downloads--WINDOWS .button--DOWNLOAD, .downloads--LINUX .button--DOWNLOAD {
+  width: 80%;
+  margin: 0 10% 1em 10%;
+}
+
+/* line 39, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-header, .downloads--subheader {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 140%;
+  font-weight: bold;
+}
+
+/* line 51, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-header:after {
+  font-family: 'Haskell_icon';
+  content: "\e607";
+  color: #323232;
+  font-size: 1.1rem;
+  margin-left: 0.75rem;
+  display: inline-block;
+}
+
+/* line 63, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text, .downloads--text {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 0 auto 1em;
+}
+/* line 69, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text:first-of-type, .downloads--text:first-of-type {
+  margin: 0 auto 0.5em;
+}
+
+/* line 76, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text h2 {
+  color: #614273;
+  font-weight: bold;
+  line-height: 150%;
+  margin-top: 1rem;
+}
+/* line 82, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text p {
+  margin: 1rem 0;
+}
+/* line 85, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text a {
+  text-decoration: underline;
+}
+/* line 88, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text ul {
+  margin: 0 0 1rem 2rem;
+}
+/* line 90, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text ul li {
+  list-style: disc;
+}
+/* line 92, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text ul li ul li {
+  list-style: circle;
+}
+
+/* line 99, ../sass/partials/components/downloads/_extends.scss */
+.downloads--instructions {
+  margin: 0.4em 0 2em 0;
+  display: inline-block;
+}
+
+/* line 12, ../sass/partials/components/_downloads.scss */
+.downloads--MAC {
+  margin-top: 2.5rem;
+}
+/* line 19, ../sass/partials/components/_downloads.scss */
+.downloads--MAC .downloads--header:before {
+  content: "\e603";
+}
+
+/* line 27, ../sass/partials/components/_downloads.scss */
+.downloads--WINDOWS .downloads--header, .downloads--LINUX .downloads--header {
+  clear: both;
+}
+
+/* line 39, ../sass/partials/components/_downloads.scss */
+.downloads--WINDOWS .downloads--header:before {
+  content: "\e604";
+}
+
+/* line 48, ../sass/partials/components/_downloads.scss */
+.downloads--LINUX .downloads--header:before {
+  content: "\e601";
+}
+
+/* line 64, ../sass/partials/components/_downloads.scss */
+.downloads--dropdown-header.close:after {
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 1, ../sass/partials/components/_site-wrapper.scss */
+.site-wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  height: auto;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+/* line 14, ../sass/partials/components/_site-wrapper.scss */
+body html {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px auto;
+}

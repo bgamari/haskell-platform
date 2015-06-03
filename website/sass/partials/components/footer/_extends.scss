@@ -1,0 +1,55 @@
+%footer--MAIN{
+  display: inline-block;
+  width: 86%;
+  margin-top: 4rem;
+  position:relative;
+  background-color: $dark-purple;
+  padding: 0 7% 3rem;
+  @include breakpoint($breakpoint--second-layout){
+    margin-top: 6rem;
+    padding: 0 7%;
+  }
+}
+
+%footer--content{
+  width: 49%;
+  float: left;
+  margin: 1.5rem 0 1rem;
+  text-align: center;
+  &:nth-child(2n){
+     float:right;
+  }
+
+  @include breakpoint($breakpoint--second-layout){
+    width: 23%;
+    float: left;
+    margin: 3rem 0 4rem 0;
+    padding: 0 1%;
+    text-align: left;
+  }
+}
+
+%footer--content-header{
+  @extend %p;
+  font-size: 1.75rem;
+  color: $white;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+%footer--content-list-link{
+  @extend %p;
+  color: $white;
+  line-height: 110%;
+  margin-bottom: 0.4rem;
+  & a{
+    text-decoration: none;
+    color: $white;
+    font-family: inherit;
+    font-size: inherit;
+    &:hover{
+      color: $white;
+      font-style: italic;
+    }
+  }
+}
