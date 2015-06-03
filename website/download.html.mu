@@ -28,7 +28,6 @@
                     <a href="#">Learn</a>
                 </li>
             </ul>
-
         </nav>
 
         <nav id="navigation--MOBILE">
@@ -60,21 +59,24 @@
 
         <div class="downloads--MAC">
             <h1 class="downloads--header">Mac</h1>
+            {{#current}}
+            {{#files}}{{#isOSX}}
             <a href="#" class="button--DOWNLOAD">
-                <span class="button--label">Download - 32 bit </span>
+                <span class="button--label">Download - {{archBits}} Bits </span>
             </a>
-            <a href="#" class="button--DOWNLOAD">
-                <span class="button--label">Download - 64 bit</span>
-            </a>
+            {{/isOSX}}{{/files}}
+            {{/current}}
 
-            <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
-            <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
-            <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
-            <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
+            {{#current}}
+            {{#files}}{{#isOSX}}
+            <span class="downloads--subheader">Haskell Platform {{version}} for {{osNameAndArch}} (10.6 or later) </span>
+            <span class="downloads--text">SHA-1: {{mHash}}</span>
+            {{/isOSX}}{{/files}}
+            {{/current}}
 
             <span class="downloads--subheader">Download Instructions</span>
             <ol class="downloads--instructions">
-                <li>1.  Double click the package icon to start the installer</li>
+                <li>1. Double click the package icon to start the installer</li>
                 <li>2. Follow the instructions</li>
             </ol>
             <span class="downloads--dropdown-header">Notes</span>
@@ -97,16 +99,40 @@
                         config file, you'll want to update it, as Cabal's defaults have changed.</li>
                 </ul>
                 <h2>General Notes:</h2>
-                <p><em>The command line development tools are required prior to installation.</em> <br>If you have <tt>/usr/bin/ld</tt> available in a shell, you should be good to go. If not:</p>
+                <p><em>The command line development tools are required prior to
+                installation.</em> <br>If you have <tt>/usr/bin/ld</tt>
+                available in a shell, you should be good to go. If not:</p>
                 <ul>
                     <li><p>On OS 10.7 or later, choose one of the following:</p>
                         <ul>
-                            <li><p>Download and install <strong>Command Line Tools for Xcode</strong>. Despite the name, you don't need Xcode installed!</p></li>
-                            <li><p>After installing Xcode (4.3 or later), choose <strong>Preferences</strong>, then pick the <strong>Downloads</strong> panel. There you can download and install the <strong>Command Line Tools</strong> as an optional component. This installs the same package as listed in the above option.</p></li>
-                            <li><p>If you have Xcode prior to 4.3, depending on how you installed it, you may already have the command line tools. If not, consider the first option above.</p></li>
+                            <li><p>Download and install <strong>Command Line
+                            Tools for Xcode</strong>. Despite the name, you
+                            don't need Xcode installed!</p></li>
+
+                            <li><p>After installing Xcode (4.3 or later),
+                            choose <strong>Preferences</strong>, then pick
+                            the <strong>Downloads</strong> panel. There you can
+                            download and install the <strong>Command Line
+                            Tools</strong> as an optional component. This
+                            installs the same package as listed in the above
+                            option.</p></li>
+
+                            <li><p>If you have Xcode prior to 4.3, depending on
+                            how you installed it, you may already have the
+                            command line tools. If not, consider the first
+                            option above.</p></li>
                         </ul></li>
-                    <li><p>On OS 10.6, 32-bit, use Xcode 3.2 or later: Choose the "Customize…" button during installation and choose <strong>UNIX Development</strong>. 64-bit version requires Xcode 4.1 or later.</p></li>
-                    <li><p><em>The command line tools and/or Xcode can be downloaded for free from <a href="http://developer.apple.com">Apple's developer website</a>, you do need to register as a developer (also free).</em></p></li>
+
+                    <li><p>On OS 10.6, 32-bit, use Xcode 3.2 or later: Choose
+                    the "Customize…" button during installation and
+                    choose <strong>UNIX Development</strong>. 64-bit version
+                    requires Xcode 4.1 or later.</p></li>
+
+                    <li><p><em>The command line tools and/or Xcode can be
+                    downloaded for free
+                    from <a href="http://developer.apple.com">Apple's developer
+                    website</a>, you do need to register as a developer (also
+                    free).</em></p></li>
                 </ul>
 </span>
         </div>
@@ -114,14 +140,20 @@
 
         <div class="downloads--WINDOWS">
             <h1 class="downloads--header">Windows</h1>
+            {{#current}}
+            {{#files}}{{#isWindows}}
             <a href="#" class="button--DOWNLOAD">
                 <span class="button--label">Download</span>
             </a>
+            {{/isWindows}}{{/files}}
+            {{/current}}
 
-            <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
-            <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
-            <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
-            <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
+            {{#current}}
+            {{#files}}{{#isWindows}}
+            <span class="downloads--subheader">Haskell Platform {{version}} for {{osNameAndArch}}</span>
+            <span class="downloads--text">SHA-1: {{mHash}}</span>
+            {{/isWindows}}{{/files}}
+            {{/current}}
 
             <span class="downloads--subheader">Download Instructions</span>
             <ol class="downloads--instructions">
@@ -131,22 +163,7 @@
             <span class="downloads--dropdown-header">Notes</span>
             <span class="downloads--dropdown-text">
                 <h2>Release Notes: </h2>
-                <ul>
-                    <li>Works on 10.6, 10.7, 10.8, 10.9, and even 10.10 beta!</li>
-                    <li>Works with both gcc and clang based systems.</li>
-                    <li>Distributed with a build of GHC 7.8.3 that differs from the released
-                        bindist in two ways: a) it was built split-objs for smaller resulting
-                        executables, b) it includes Cabal-1.18.1.4 which fixes a particularly nasty
-                        problem with haddock, -XCPP, and clang based systems. This ghc-7.8.3 bindist
-                        is already incorporated into the installer above, but for reference is
-                        available here: <a href="download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2">ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2</a></li>
-                    <li>Includes a new experimental <code>activate-hs</code> command that can
-                        switch between multiple installed versions of the platform</li>
-                    <li>The cabal command is wrapped to provide a smoother file layout on the Mac.
-                        The wrapping only updates the <code>~/.cabal/config</code> file the first
-                        time you run it. Please pay attention to its output. If you have a custom
-                        config file, you'll want to update it, as Cabal's defaults have changed.</li>
-                </ul> </span>
+            </span>
         </div>
 
 
@@ -156,41 +173,23 @@
                 <span class="button--label">Download</span>
             </a>
 
-            <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
-            <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
-            <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
-            <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
+            {{#current}}
+            {{#files}}{{#isLinux}}
+            <span class="downloads--subheader">Haskell Platform {{version}} for {{osNameAndArch}}</span>
+            <span class="downloads--text">SHA-1: {{mHash}}</span>
+            {{/isLinux}}{{/files}}
+            {{/current}}
 
             <span class="downloads--subheader">Download Instructions</span>
             <ol class="downloads--instructions">
-                <li>1.  Double click the package icon to start the installer</li>
+                <li>1. Double click the package icon to start the installer</li>
                 <li>2. Follow the instructions</li>
             </ol>
             <span class="downloads--dropdown-header">Notes</span>
             <span class="downloads--dropdown-text">
                 <h2>Release Notes: </h2>
-                <ul>
-                    <li>Works on 10.6, 10.7, 10.8, 10.9, and even 10.10 beta!</li>
-                    <li>Works with both gcc and clang based systems.</li>
-                    <li>Distributed with a build of GHC 7.8.3 that differs from the released
-                        bindist in two ways: a) it was built split-objs for smaller resulting
-                        executables, b) it includes Cabal-1.18.1.4 which fixes a particularly nasty
-                        problem with haddock, -XCPP, and clang based systems. This ghc-7.8.3 bindist
-                        is already incorporated into the installer above, but for reference is
-                        available here: <a href="download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2">ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2</a></li>
-                    <li>Includes a new experimental <code>activate-hs</code> command that can
-                        switch between multiple installed versions of the platform</li>
-                    <li>The cabal command is wrapped to provide a smoother file layout on the Mac.
-                        The wrapping only updates the <code>~/.cabal/config</code> file the first
-                        time you run it. Please pay attention to its output. If you have a custom
-                        config file, you'll want to update it, as Cabal's defaults have changed.</li>
-                </ul>
             </span>
         </div>
-
-
-
-
 
         <footer class="footer--MAIN">
             <div class="footer--content">
