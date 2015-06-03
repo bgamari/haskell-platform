@@ -4,6 +4,7 @@ module Dirs
 
 import Development.Shake
 import Development.Shake.FilePath
+import Prelude hiding ((*>))
 
 import Paths (markerRoot)
 import Utils

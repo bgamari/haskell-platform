@@ -13,6 +13,7 @@ import Development.Shake
 import Development.Shake.FilePath
 import qualified Distribution.InstalledPackageInfo as C
 import qualified Distribution.Package as C
+import Prelude hiding ((*>))
 
 import Dirs
 import LocalCommand
