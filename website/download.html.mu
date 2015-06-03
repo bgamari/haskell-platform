@@ -1,245 +1,233 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Haskell Platform</title>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/main.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/haskell.font.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/hl.css">
+
     <link rel="icon" type="image/png" href="img/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <div class="site-wrapper">
-        <nav class="navigation--MAIN">
-            <button class="navigation--mobile-open">open</button>
-            <button class="navigation--mobile-close">close</button>
-            <ul class="navigation--links-list">
-                <li class="navigation--links">
-                    <a href="#">Downloads</a>
-                </li>
-                <li class="navigation--links">
-                    <a href="#">Community</a>
-                </li>
-                <li class="navigation--links">
-                    <a href="#">Documentation</a>
-                </li>
-                <li class="navigation--links">
-                    <a href="#">Learn</a>
-                </li>
-            </ul>
-        </nav>
-
-        <nav id="navigation--MOBILE">
-            <ul class="navigation--links-list">
-                <li class="navigation--links">
-                    <a href="download.html">Downloads</a>
-                </li>
-                <li class="navigation--links">
-                    <a href="#">Community</a>
-                </li>
-                <li class="navigation--links">
-                    <a href="#">Documentation</a>
-                </li>
-                <li class="navigation--links">
-                    <a href="#">Learn</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="banner--MAIN">
-            <div class="banner--header">
-                <span class="banner--logo"></span>
-                <h1 class="banner--title"><a href="index.html">Haskell Platform</a></h1>
+    <meta name="description" content="Haskell Platform TODO">
+  </head>
+  <body class="page-downloads">
+    <div class="wrap">
+      <div class="template">
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/">
+                <span class="logo"></span>
+                Haskell Platform
+              </a>
             </div>
-            <img class="banner--background-image" src="img/background-texture.png">
-        </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Learn</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container"><ol class="breadcrumb"></ol></div>
 
+        <div class="container">
+          <h1>Haskell Platform</h1>
 
+          <div class="downloads-platform container">
+            <h2>Mac</h2>
 
-        <div class="downloads--MAC">
-            <h1 class="downloads--header">Mac</h1>
             {{#current}}
-            {{#files}}{{#isOSX}}
-            <a href="#" class="button--DOWNLOAD">
-                <span class="button--label">Download - {{archBits}} Bits </span>
-            </a>
-            {{/isOSX}}{{/files}}
+            <div class="row span12">
+              {{#files}}{{#isOSX}}
+              <a href="{{url}}" class="span6 col-md-6 btn btn-haskell" role="button">
+                Download - {{archBits}} Bits
+              </a>
+              {{/isOSX}}{{/files}}
+            </div>
             {{/current}}
 
-            {{#current}}
-            {{#files}}{{#isOSX}}
-            <span class="downloads--subheader">Haskell Platform {{version}} for {{osNameAndArch}} (10.6 or later) </span>
-            <span class="downloads--text">SHA-1: {{mHash}}</span>
-            {{/isOSX}}{{/files}}
-            {{/current}}
+            {{#current}} {{#files}}{{#isOSX}}
+            <h4>
+              Haskell Platform {{version}} for {{osNameAndArch}} (10.6 or later)
+            </h4>
+            <div>SHA-1: {{mHash}}</div>
+            {{/isOSX}}{{/files}} {{/current}}
 
-            <span class="downloads--subheader">Download Instructions</span>
-            <ol class="downloads--instructions">
-                <li>1. Double click the package icon to start the installer</li>
-                <li>2. Follow the instructions</li>
+            <h3>Download Instructions</h3>
+            <ol>
+              <li>Double click the package icon to start the installer</li>
+              <li>Follow the instructions</li>
             </ol>
-            <span class="downloads--dropdown-header">Notes</span>
-            <span class="downloads--dropdown-text">
-                <h2>Release Notes: </h2>
-                <ul>
-                    <li>Works on 10.6, 10.7, 10.8, 10.9, and even 10.10 beta!</li>
-                    <li>Works with both gcc and clang based systems.</li>
-                    <li>Distributed with a build of GHC 7.8.3 that differs from the released
-                        bindist in two ways: a) it was built split-objs for smaller resulting
-                        executables, b) it includes Cabal-1.18.1.4 which fixes a particularly nasty
-                        problem with haddock, -XCPP, and clang based systems. This ghc-7.8.3 bindist
-                        is already incorporated into the installer above, but for reference is
-                        available here: <a href="download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2">ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2</a></li>
-                    <li>Includes a new experimental <code>activate-hs</code> command that can
-                        switch between multiple installed versions of the platform</li>
-                    <li>The cabal command is wrapped to provide a smoother file layout on the Mac.
-                        The wrapping only updates the <code>~/.cabal/config</code> file the first
-                        time you run it. Please pay attention to its output. If you have a custom
-                        config file, you'll want to update it, as Cabal's defaults have changed.</li>
-                </ul>
-                <h2>General Notes:</h2>
-                <p><em>The command line development tools are required prior to
-                installation.</em> <br>If you have <tt>/usr/bin/ld</tt>
+
+            <h3>Notes</h3>
+            <p class="expand"><a>Click to expand</a></p>
+            <div class="expandable">
+              <h4>Release Notes:</h4>
+              <ul>
+                <li>Works on 10.6, 10.7, 10.8, 10.9, and even 10.10
+                  beta!</li>
+                <li>Works with both gcc and clang based systems.</li>
+                <li>Distributed with a build of GHC 7.8.3 that differs from
+                  the released bindist in two ways: a) it was built
+                  split-objs for smaller resulting executables, b) it
+                  includes Cabal-1.18.1.4 which fixes a particularly nasty
+                  problem with haddock, -XCPP, and clang based systems.
+                  This ghc-7.8.3 bindist is already incorporated into the
+                  installer above, but for reference is available
+                  here: <a href="download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2">ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2</a></li>
+                <li>Includes a new experimental <code>activate-hs</code>
+                  command that can switch between multiple installed
+                  versions of the platform</li>
+                <li>The cabal command is wrapped to provide a smoother file
+                  layout on the Mac. The wrapping only updates
+                  the <code>~/.cabal/config</code> file the first time you
+                  run it. Please pay attention to its output. If you have
+                  a custom config file, you'll want to update it, as
+                  Cabal's defaults have changed.</li>
+              </ul>
+
+              <h4>General Notes:</h4>
+              <p><em>The command line development tools are required prior to
+                  installation.</em> <br>If you have <tt>/usr/bin/ld</tt>
                 available in a shell, you should be good to go. If not:</p>
-                <ul>
-                    <li><p>On OS 10.7 or later, choose one of the following:</p>
-                        <ul>
-                            <li><p>Download and install <strong>Command Line
-                            Tools for Xcode</strong>. Despite the name, you
-                            don't need Xcode installed!</p></li>
+              <ul>
+                <li><p>On OS 10.7 or later, choose one of the following:</p>
+                  <ul>
+                    <li><p>Download and install <strong>Command Line
+                          Tools for Xcode</strong>. Despite the name, you
+                        don't need Xcode installed!</p></li>
 
-                            <li><p>After installing Xcode (4.3 or later),
-                            choose <strong>Preferences</strong>, then pick
-                            the <strong>Downloads</strong> panel. There you can
-                            download and install the <strong>Command Line
-                            Tools</strong> as an optional component. This
-                            installs the same package as listed in the above
-                            option.</p></li>
+                    <li><p>After installing Xcode (4.3 or later),
+                        choose <strong>Preferences</strong>, then pick
+                        the <strong>Downloads</strong> panel. There you can
+                        download and install the <strong>Command Line
+                          Tools</strong> as an optional component. This
+                        installs the same package as listed in the above
+                        option.</p></li>
 
-                            <li><p>If you have Xcode prior to 4.3, depending on
-                            how you installed it, you may already have the
-                            command line tools. If not, consider the first
-                            option above.</p></li>
-                        </ul></li>
+                    <li><p>If you have Xcode prior to 4.3, depending on
+                        how you installed it, you may already have the
+                        command line tools. If not, consider the first
+                        option above.</p></li>
+                </ul></li>
 
-                    <li><p>On OS 10.6, 32-bit, use Xcode 3.2 or later: Choose
+                <li><p>On OS 10.6, 32-bit, use Xcode 3.2 or later: Choose
                     the "Customize…" button during installation and
                     choose <strong>UNIX Development</strong>. 64-bit version
                     requires Xcode 4.1 or later.</p></li>
 
-                    <li><p><em>The command line tools and/or Xcode can be
-                    downloaded for free
-                    from <a href="http://developer.apple.com">Apple's developer
-                    website</a>, you do need to register as a developer (also
-                    free).</em></p></li>
-                </ul>
-</span>
-        </div>
+                <li><p><em>The command line tools and/or Xcode can be
+                      downloaded for free
+                      from <a href="http://developer.apple.com">Apple's developer
+                        website</a>, you do need to register as a developer (also
+                      free).</em></p></li>
+              </ul>
+            </div>
 
+            <div class="downloads-platform container">
+              <h2>Windows</h2>
 
-        <div class="downloads--WINDOWS">
-            <h1 class="downloads--header">Windows</h1>
-            {{#current}}
-            {{#files}}{{#isWindows}}
-            <a href="#" class="button--DOWNLOAD">
-                <span class="button--label">Download</span>
-            </a>
-            {{/isWindows}}{{/files}}
-            {{/current}}
+              {{#current}}
+              <div>
+                {{#files}}{{#isWindows}}
+                <a href="{{url}}" class="span6 col-md-6 btn btn-haskell" role="button">
+                  <span class="button--label">Download - {{archBits}} Bits</span>
+                </a>
+              </div>
+              {{/isWindows}}{{/files}} {{/current}}
 
-            {{#current}}
-            {{#files}}{{#isWindows}}
-            <span class="downloads--subheader">Haskell Platform {{version}} for {{osNameAndArch}}</span>
-            <span class="downloads--text">SHA-1: {{mHash}}</span>
-            {{/isWindows}}{{/files}}
-            {{/current}}
+              {{#current}} {{#files}}{{#isWindows}}
+              <h4>
+                Haskell Platform {{version}} for {{osNameAndArch}}
+              </h4>
+              <div>SHA-1: {{mHash}}</div>
+              {{/isWindows}}{{/files}} {{/current}}
 
-            <span class="downloads--subheader">Download Instructions</span>
-            <ol class="downloads--instructions">
-                <li>1.  Double click the package icon to start the installer</li>
-                <li>2. Follow the instructions</li>
-            </ol>
-            <span class="downloads--dropdown-header">Notes</span>
-            <span class="downloads--dropdown-text">
-                <h2>Release Notes: </h2>
-            </span>
-        </div>
-
-
-        <div class="downloads--LINUX">
-            <h1 class="downloads--header">Linux</h1>
-            <a href="#" class="button--DOWNLOAD">
-                <span class="button--label">Download</span>
-            </a>
-
-            {{#current}}
-            {{#files}}{{#isLinux}}
-            <span class="downloads--subheader">Haskell Platform {{version}} for {{osNameAndArch}}</span>
-            <span class="downloads--text">SHA-1: {{mHash}}</span>
-            {{/isLinux}}{{/files}}
-            {{/current}}
-
-            <span class="downloads--subheader">Download Instructions</span>
-            <ol class="downloads--instructions">
+              <h3>Download Instructions</h3>
+              <ol>
                 <li>1. Double click the package icon to start the installer</li>
                 <li>2. Follow the instructions</li>
-            </ol>
-            <span class="downloads--dropdown-header">Notes</span>
-            <span class="downloads--dropdown-text">
+              </ol>
+
+              <h3>Notes</h3>
+              <p class="expand"><a>Click to expand</a></p>
+              <div class="expandable">
                 <h2>Release Notes: </h2>
-            </span>
+              </div>
+            </div>
+
+            <div class="downloads-platform container">
+              <h2>Linux</h2>
+              {{#current}}
+              {{#files}}{{#isLinux}}
+              <a href="{{url}}" class="button--DOWNLOAD">
+                <span class="button--label">Download</span>
+              </a>
+              {{/isLinux}}{{/files}}
+              {{/current}}
+
+              {{#current}}
+              {{#files}}{{#isLinux}}
+              <h4>
+                Haskell Platform {{version}} for {{osNameAndArch}}
+              </h4>
+              <div>SHA-1: {{mHash}}</div>
+              {{/isLinux}}{{/files}}
+              {{/current}}
+
+              <h3>Download Instructions</h3>
+              <ol>
+                <li>1. Double click the package icon to start the installer</li>
+                <li>2. Follow the instructions</li>
+              </ol>
+
+              <h3>Notes</h3>
+              <p class="expand"><a>Click to expand</a></p>
+              <div class="expandable">
+                <h4>Release Notes: </h4>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <footer class="footer--MAIN">
-            <div class="footer--content">
-                <h3 class="footer--content-header">Learn Haskell</h3>
-                <ul class="footer--content-list">
-                    <li class="footer--content-list-link"><a href="#">What is Haskell?</a></li>
-                    <li class="footer--content-list-link"><a href="#">Try Haskell in your browser</a></li>
-                    <li class="footer--content-list-link"><a href="#">Learning Resources</a></li>
-                    <li class="footer--content-list-link"><a href="#">Books and Tutorials</a></li>
-                    <li class="footer--content-list-link"><a href="#">Library Documentation</a></li>
-                    <li class="footer--content-list-link"><a href="#">School of Haskell</a></li>
-                </ul>
-            </div>
-
-            <div class="footer--content">
-                <h3 class="footer--content-header">Use Haskell</h3>
-                <ul class="footer--content-list">
-                    <li class="footer--content-list-link"><a href="#">Download Haskell</a></li>
-                    <li class="footer--content-list-link"><a href="#">Language Specification</a></li>
-                    <li class="footer--content-list-link"><a href="#">Hackage Library Database</a></li>
-                    <li class="footer--content-list-link"><a href="#">Applications and Libraries</a></li>
-                    <li class="footer--content-list-link"><a href="#">Hoogle and Hayoo API search</a></li>
-                    <li class="footer--content-list-link"><a href="#">IDEs, Editors, and Tools</a></li>
-                </ul>
-            </div>
-
-            <div class="footer--content">
-                <h3 class="footer--content-header">Join the Community</h3>
-                <ul class="footer--content-list">
-                    <li class="footer--content-list-link"><a href="#">Haskell on Reddit, Stack Overflow and G+</a></li>
-                    <li class="footer--content-list-link"><a href="#">Mailing lists and IRC channels</a></li>
-                    <li class="footer--content-list-link"><a href="#">Wiki (how to contribute)</a></li>
-                    <li class="footer--content-list-link"><a href="#">Communities and Activities Reports</a></li>
-                    <li class="footer--content-list-link"><a href="#">Haskell in Industry, Research and Education</a></li>
-                    <li class="footer--content-list-link"><a href="#">Planet Haskell</a></li>
-                    <li class="footer--content-list-link"><a href="#">Local User Groups</a></li>
-                </ul>
-            </div>
-
-
-            <div class="footer--content">
-                <h3 class="footer--content-header">Contribute</h3>
-                <ul class="footer--content-list">
-                    <li class="footer--content-list-link"><a href="#">Bug Tracker</a></li>
-                    <li class="footer--content-list-link"><a href="#">How to Help</a></li>
-                    <li class="footer--content-list-link"><a href="#">Find Us on Github</a></li>
-                </ul>
-            </div>
-        </footer>
+      </div>
     </div>
 
-</body>
+    <footer>
+      <div class="container">
+        <p>
+          <span class="item">© 2014–2015 haskell.org</span>
+          <span class="item footer-contribute">
+            Got changes to contribute?
+            <a href="https://github.com/haskell-infra/hl"> Fork or comment on Github</a>
+          </span>
+          <span class="pull-right">
+            <span>Proudly hosted by </span>
+            <a href="https://www.rackspace.com/"><img src="/static/img/rackspace.svg?etag=J84VdDuP" alt="rackspace" height="20" width="20"></a>
+          </span>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+function setupExpanders() {
+  $('.features .span6') .each(function () {
+    var $this = $(this);
+    $this.click(function () {
+      $this.find('.expandable') .slideToggle(function () {
+        $this.find('.expand') .slideToggle('fast');
+      });
+    });
+    if ($this.find('.expandable') .size() == 0)
+    $this.find('.expand') .hide();
+  });
+}
+setupExpanders();
+    </script>
+  </body>
 </html>

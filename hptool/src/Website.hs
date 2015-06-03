@@ -33,6 +33,9 @@ fileCtx (dist, url, mHash) = mkStrContext ctx
     ctx "osNameAndArch" = MuVariable $ distName dist
     ctx "url" = MuVariable url
     ctx "mHash" = maybe (MuBool False) MuVariable mHash
+    ctx "archBits"
+      | DistBinary _ arch <- dist = MuVariable $ archBits arch
+      | otherwise = MuNothing
 
     ctx "isOSX"     = MuBool $ distIsFor OsOSX     dist
     ctx "isWindows" = MuBool $ distIsFor OsWindows dist
