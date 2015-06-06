@@ -9,3 +9,19 @@
 	color: #fff;
 	border-color: #204d74;
 }
+
+/*
+ * Home page
+ */
+.page-home .download-btn {
+    width: 30%;
+    margin: 30px auto;
+}
+
+.page-home .download-btn a {
+    padding: 30px;
+}
+
+.bundled ul li {
+    list-style: none;
+}
