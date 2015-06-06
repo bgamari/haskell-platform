@@ -5,7 +5,8 @@
   margin: 0 0px;
 }
 
-.btn-haskell.active,.btn-haskell.focus,.btn-haskell:active,.btn-haskell:focus,.btn-haskell:hover,.open>.dropdown-toggle.btn-haskell{
+.btn-haskell.active, .btn-haskell.focus, .btn-haskell:active, .btn-haskell:focus,
+.btn-haskell:hover,.open > .dropdown-toggle.btn-haskell {
 	color: #fff;
 	border-color: #204d74;
 }
@@ -24,4 +25,60 @@
 
 .bundled ul li {
     list-style: none;
+}
+
+/*
+ * Download
+ */
+.download-btn {
+    text-align: center;
+}
+
+.preferred-platform .download-btn a {
+    background-color: #524A67;
+}
+
+.download-btn a {
+    margin: 10px 10px;
+    min-width: 30%;
+}
+
+.downloads-platform {
+    padding-bottom: 50px;
+}
+
+.downloads-platform .expander img {
+    display: block;
+    margin: 15px auto;
+    height: 25px;
+}
+
+.downloads-platform.visible .expander {
+    height: 0px;
+    overflow-y: hidden;
+}
+
+.downloads-platform .content {
+    overflow-y: hidden;
+    height: 0px;
+}
+
+.downloads-platform.visible .content {
+    height: auto;
+}
+
+.platform-name {
+    text-align: center;
+}
+
+.platform-name h2 {
+    display: block;
+    margin: auto;
+}
+
+.platform-name img {
+    max-width: 40px;
+    max-height: 30px;
+    display: block;
+    margin: auto;
 }

@@ -13,3 +13,41 @@ $(document).ready(function() {
         });
     });
 });
+
+function identifyPlatform() {
+    var ua = navigator.userAgent;
+    var userAgents = {
+        'Mac OSX': 'osx',
+        'Mac OS X': 'osx',
+        'Linux': 'linux',
+        'Windows': 'windows'
+    };
+    for (key in userAgents) {
+        if (ua.indexOf(key) != -1) {
+            return userAgents[key];
+        }
+    }
+    return 'unknown';
+}
+
+// Infer user's operating system
+$(document).ready(function() {
+    var platform = identifyPlatform();
+    if (platform != 'unknown'){
+        var $platform = $(".downloads-platform[data-os='"+platform+"']");
+        $platform
+            .prependTo('#platforms')
+            .addClass('preferred-platform')
+            .addClass('visible');
+    } else {
+        $('.downloads-platform').addClass('visible');
+    }
+});
+
+// Expanders
+$(document).ready(function() {
+    $('.expander a').click(function() {
+        var $this = $(this);
+        $this.parents('.downloads-platform').addClass('visible');
+    });
+});
