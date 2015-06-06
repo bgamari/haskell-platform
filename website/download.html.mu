@@ -201,7 +201,7 @@
       </div>
     </div>
 
-    <footer>
+    <div class="footer">
       <div class="container">
         <p>
           <span class="item">© 2014–2015 haskell.org</span>
