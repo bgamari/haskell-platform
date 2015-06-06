@@ -59,18 +59,25 @@
                     <div class="row" >
                         <aside class="col-md-4">
                             <h2>Comprehensive</h2>
-                            <p>The Haskell Platform is the easiest way to get started with programming Haskell. It comes with all
-                                you need to get up and running. Think of it as "Haskell: batteries included". </p>
+                            <p>The Haskell Platform is the easiest way to get
+                                started with programming Haskell. It comes with
+                                all you need to get up and running. Think of it
+                                as Haskell with batteries included. </p>
                         </aside>
                         <aside class="col-md-4" >
                             <h2>Robust</h2>
-                            <p>The Haskell Platform contains only stable and widely-used tools and libraries,
-                                drawn from a pool of thousands of Haskell packages, ensuring you get the best from what is on offer.</p>
+                            <p>The Haskell Platform contains only stable and
+                                widely-used tools and libraries, drawn from a
+                                pool of thousands of Haskell packages, ensuring
+                                you get the best from what is on offer.</p>
                         </aside>
                         <aside class="col-md-4" >
                             <h2>Cutting Edge</h2>
-                            <p>The Haskell Platform ships with advanced features such as multicore parallelism,
-                                thread sparks and transactional memory, along with many other technologies, to help you get work done. </p>
+                            <p>The Haskell Platform ships with advanced features
+                                such as multicore parallelism, transactional
+                                memory, a strong type system, and industrial
+                                strength compiler to help you get work done.
+                                </p>
                         </aside>
                     </div>
 
