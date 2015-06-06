@@ -47,24 +47,19 @@
     padding-bottom: 50px;
 }
 
-.downloads-platform .expander img {
-    display: block;
-    margin: 15px auto;
-    height: 25px;
-}
-
-.downloads-platform.visible .expander {
-    height: 0px;
-    overflow-y: hidden;
-}
-
 .downloads-platform .content {
-    overflow-y: hidden;
+    overflow: hidden;
     height: 0px;
+    transition: height 600ms;
 }
 
 .downloads-platform.visible .content {
+    transition: height 600ms;
     height: auto;
+}
+
+.downloads-platform.visible .expander {
+    display: none;
 }
 
 .platform-name {
@@ -82,3 +77,22 @@
     display: block;
     margin: auto;
 }
+
+.expander {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.expander img {
+    position: absolute;
+    width: 50px;
+    display: block;
+    transition: all 400ms ease;
+}
+
+.expander img.expand-2 {top: 8px;}
+.expander img.expand-3 {top: 16px;}
+.expander:hover img.expand-2 {transform: translateY(5px);}
+.expander:hover img.expand-3 {transform: translateY(10px);}

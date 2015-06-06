@@ -52,7 +52,11 @@
         <div class="container" id="platforms">
           <section class="downloads-platform container" data-os="osx">
             <div class="platform-name"><img src="img/os-osx.svg" alt="Mac OS X logo"> <h2>Mac OS X</h2></div>
-            <div class="expander"><a href="#"><img src="img/expand.svg"></a></div>
+            <div class="expander"><a href="#">
+                <img src="img/expand-piece.svg" class="expand-1">
+                <img src="img/expand-piece.svg" class="expand-2">
+                <img src="img/expand-piece.svg" class="expand-3">
+            </a></div>
             <div class="content">
               {{#current}}
               <div class="row span12 download-btn">
@@ -68,7 +72,7 @@
               <h4>
                 Haskell Platform {{version}} for {{osNameAndArch}} (10.6 or later)
               </h4>
-              <div>SHA-1: {{mHash}}</div>
+              <div><strong>SHA-1</strong>: <code>{{mHash}}</code></div>
               {{/isOSX}}{{/files}} {{/current}}
 
               <h3>Download Instructions</h3>
@@ -145,7 +149,11 @@
 
           <section class="downloads-platform container" data-os="windows">
             <div class="platform-name"><img src="img/os-windows.svg" alt="Windows logo"> <h2>Windows</h2></div>
-            <div class="expander"><a href="#"><img src="img/expand.svg"></a></div>
+            <div class="expander"><a href="#">
+                <img src="img/expand-piece.svg" class="expand-1">
+                <img src="img/expand-piece.svg" class="expand-2">
+                <img src="img/expand-piece.svg" class="expand-3">
+            </a></div>
             <div class="content">
               {{#current}}
               <div class="row span12 download-btn">
@@ -161,7 +169,7 @@
               <h4>
                 Haskell Platform {{version}} for {{osNameAndArch}}
               </h4>
-              <div>SHA-1: {{mHash}}</div>
+              <div><strong>SHA-1:</strong> <code>{{mHash}}</code></div>
               {{/isWindows}}{{/files}} {{/current}}
   
               <h3>Download Instructions</h3>
@@ -179,7 +187,11 @@
 
           <section class="downloads-platform container" data-os="linux">
             <div class="platform-name"><img src="img/os-linux.svg" alt="Linux logo"> <h2>Linux</h2></div>
-            <div class="expander"><a href="#">Expand</a></div>
+            <div class="expander"><a href="#">
+                <img src="img/expand-piece.svg" class="expand-1">
+                <img src="img/expand-piece.svg" class="expand-2">
+                <img src="img/expand-piece.svg" class="expand-3">
+            </a></div>
             <div class="content">
               {{#current}}
               <div class="row span12 download-btn">
@@ -196,7 +208,7 @@
               <h4>
               Haskell Platform {{version}} for {{osNameAndArch}}
               </h4>
-              <div>SHA-1: {{mHash}}</div>
+              <div><strong>SHA-1:</strong> <code>{{mHash}}</code></div>
               {{/isLinux}}{{/files}}
               {{/current}}
 
