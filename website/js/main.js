@@ -1,29 +1,15 @@
-//function for mobile menu hide/show
-
-$(function() {
-    $(".navigation--mobile-open").click(function () {
-        $(".site-wrapper").animate({"left": "21rem"}, "slow");
-        $(".navigation--mobile-open").css("display", "none");
-        $(".navigation--mobile-close").css("display", "block");
-    });
-
-    $(".navigation--mobile-close").click(function () {
-        $(".site-wrapper").animate({"left": "0"}, "slow");
-        $(".navigation--mobile-open").css("display", "block");
-        $(".navigation--mobile-close").css("display", "none");
-    });
-
-});
-
-//function for notes toggle
-
 $(document).ready(function() {
-    $(".downloads--dropdown-text").hide();  //start with text hidden
+    $('.expandable').each(function() {
+        var $this = $(this);
+        $this.children().wrapAll('<div class="contents"></div>')
+        var $contents = $this.children();
+        $contents.hide();
 
-    $('.downloads--dropdown-header').click(function() {
+        var $link = $('<a href="#">Click to expand</a>');
+        $this.prepend($link);
 
-        $(this).next('.downloads--dropdown-text').slideToggle(500);
-        $(this).toggleClass('close');
-
+        $link.click(function() {
+            $contents.slideToggle();
+        });
     });
-}); // end ready
+});

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"></meta>
     <title>Haskell Platform</title>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/main.js"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/haskell.font.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/fonts/Haskell/style.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/hl.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/haskell-platform.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="img/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +40,7 @@
         <div class="container"><ol class="breadcrumb"></ol></div>
 
         <div class="container">
-          <h1>Haskell Platform</h1>
+          <h1>Download Haskell Platform</h1>
 
           <div class="downloads-platform container">
             <h2>Mac</h2>
@@ -66,7 +69,6 @@
             </ol>
 
             <h3>Notes</h3>
-            <p class="expand"><a>Click to expand</a></p>
             <div class="expandable">
               <h4>Release Notes:</h4>
               <ul>
@@ -123,75 +125,76 @@
                     requires Xcode 4.1 or later.</p></li>
 
                 <li><p><em>The command line tools and/or Xcode can be
-                      downloaded for free
-                      from <a href="http://developer.apple.com">Apple's developer
-                        website</a>, you do need to register as a developer (also
+                      downloaded for free from
+                      <a href="http://developer.apple.com">Apple's developer
+                      website</a>, you do need to register as a developer (also
                       free).</em></p></li>
               </ul>
             </div>
+          </div>
 
-            <div class="downloads-platform container">
-              <h2>Windows</h2>
+          <div class="downloads-platform container">
+            <h2>Windows</h2>
 
-              {{#current}}
-              <div>
-                {{#files}}{{#isWindows}}
-                <a href="{{url}}" class="span6 col-md-6 btn btn-haskell" role="button">
-                  <span class="button--label">Download - {{archBits}} Bits</span>
-                </a>
-              </div>
-              {{/isWindows}}{{/files}} {{/current}}
-
-              {{#current}} {{#files}}{{#isWindows}}
-              <h4>
-                Haskell Platform {{version}} for {{osNameAndArch}}
-              </h4>
-              <div>SHA-1: {{mHash}}</div>
-              {{/isWindows}}{{/files}} {{/current}}
-
-              <h3>Download Instructions</h3>
-              <ol>
-                <li>1. Double click the package icon to start the installer</li>
-                <li>2. Follow the instructions</li>
-              </ol>
-
-              <h3>Notes</h3>
-              <p class="expand"><a>Click to expand</a></p>
-              <div class="expandable">
-                <h2>Release Notes: </h2>
-              </div>
+            {{#current}}
+            <div class="row span12">
+              {{#files}}{{#isWindows}}
+              <a href="{{url}}" class="span6 col-md-6 btn btn-haskell" role="button">
+                Download - {{archBits}} Bits
+              </a>
+              {{/isWindows}}{{/files}}
             </div>
+            {{/current}}
 
-            <div class="downloads-platform container">
-              <h2>Linux</h2>
-              {{#current}}
+            {{#current}} {{#files}}{{#isWindows}}
+            <h4>
+              Haskell Platform {{version}} for {{osNameAndArch}}
+            </h4>
+            <div>SHA-1: {{mHash}}</div>
+            {{/isWindows}}{{/files}} {{/current}}
+
+            <h3>Download Instructions</h3>
+            <ol>
+              <li>1. Double click the package icon to start the installer</li>
+              <li>2. Follow the instructions</li>
+            </ol>
+
+            <h3>Notes</h3>
+            <div class="expandable">
+              <h4>Release Notes: </h4>
+            </div>
+          </div>
+
+          <div class="downloads-platform container">
+            <h2>Linux</h2>
+            {{#current}}
+            <div class="row span12">
               {{#files}}{{#isLinux}}
-              <a href="{{url}}" class="button--DOWNLOAD">
-                <span class="button--label">Download</span>
+              <a href="{{url}}" class="span6 col-md-6 btn btn-haskell" role="button">
+                Download
               </a>
               {{/isLinux}}{{/files}}
-              {{/current}}
+            </div>
+            {{/current}}
 
-              {{#current}}
-              {{#files}}{{#isLinux}}
-              <h4>
-                Haskell Platform {{version}} for {{osNameAndArch}}
-              </h4>
-              <div>SHA-1: {{mHash}}</div>
-              {{/isLinux}}{{/files}}
-              {{/current}}
+            {{#current}}
+            {{#files}}{{#isLinux}}
+            <h4>
+              Haskell Platform {{version}} for {{osNameAndArch}}
+            </h4>
+            <div>SHA-1: {{mHash}}</div>
+            {{/isLinux}}{{/files}}
+            {{/current}}
 
-              <h3>Download Instructions</h3>
-              <ol>
-                <li>1. Double click the package icon to start the installer</li>
-                <li>2. Follow the instructions</li>
-              </ol>
+            <h3>Download Instructions</h3>
+            <ol>
+              <li>1. Double click the package icon to start the installer</li>
+              <li>2. Follow the instructions</li>
+            </ol>
 
-              <h3>Notes</h3>
-              <p class="expand"><a>Click to expand</a></p>
-              <div class="expandable">
-                <h4>Release Notes: </h4>
-              </div>
+            <h3>Notes</h3>
+            <div class="expandable">
+              <h4>Release Notes: </h4>
             </div>
           </div>
         </div>
@@ -213,21 +216,5 @@
         </p>
       </div>
     </footer>
-
-    <script>
-function setupExpanders() {
-  $('.features .span6') .each(function () {
-    var $this = $(this);
-    $this.click(function () {
-      $this.find('.expandable') .slideToggle(function () {
-        $this.find('.expand') .slideToggle('fast');
-      });
-    });
-    if ($this.find('.expandable') .size() == 0)
-    $this.find('.expand') .hide();
-  });
-}
-setupExpanders();
-    </script>
   </body>
 </html>

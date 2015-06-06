@@ -1,0 +1,11 @@
+.btn-haskell {
+	color: #d1cddc;
+	background-color: #352F44;
+	border-color: #333;
+  margin: 0 0px;
+}
+
+.btn-haskell.active,.btn-haskell.focus,.btn-haskell:active,.btn-haskell:focus,.btn-haskell:hover,.open>.dropdown-toggle.btn-haskell{
+	color: #fff;
+	border-color: #204d74;
+}
