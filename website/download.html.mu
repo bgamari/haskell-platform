@@ -15,7 +15,7 @@
 
         <link rel="icon" type="image/png" href="img/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Haskell Platform is a batteries-include Haskell distribution">
+        <meta name="description" content="Haskell Platform is a Haskell distribution with batteries included">
     </head>
     <body class="page-home">
         <div class="wrap">
@@ -46,7 +46,7 @@
                                 <div class="branding">
                                     <span style="background-image: url(img/logo.png)" class="name">Haskell Platform</span>
                                     <span class="summary">
-                                        Haskell with batteries-included
+                                        Haskell with batteries included
                                     </span>
                                 </div>
                             </div>
