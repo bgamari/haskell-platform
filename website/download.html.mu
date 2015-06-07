@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<!-- -*- engine:ctemplate -->
+<!DOCTYPE html> <!-- -*- mode: web-mode; engine: ctemplate -*- -->
 <html>
     <head>
         <meta charset="utf-8"></meta>
