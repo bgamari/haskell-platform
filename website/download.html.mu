@@ -105,7 +105,7 @@
                                 <strong>2015.01.2</strong>. Note that the
                                 Haskell Platform is only compatible with
                                 <strong>OS X 10.6 and later</strong>.</p>
-                            <p> To get started, perform these steps,</p>
+                            <p> To get started perform these steps,</p>
 
                             <ol class="install-steps">
                                 <li>
@@ -148,7 +148,7 @@
                             <p>
                                 The latest version of the Haskell Platform for Windows is
                                 <strong>2015.01.2</strong>.</p>
-                            <p> To get started, perform these steps,</p>
+                            <p> To get started perform these steps,</p>
 
                             <ol class="install-steps">
                                 <li>
@@ -191,7 +191,7 @@
                             <p>
                                 The latest version of the Haskell Platform for Linux is
                                 <strong>2015.01.2</strong>.</p>
-                            <p> To get started, perform these steps,</p>
+                            <p> To get started perform these steps,</p>
 
                             <ol class="install-steps">
                                 <li>
