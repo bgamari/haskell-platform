@@ -25,7 +25,7 @@
                         <div class="navbar-header">
                             <a class="navbar-brand" href="/">
                                 <span class="logo"></span>
-                                Haskell Platform
+                                Haskell&nbsp;Platform
                             </a>
                         </div>
                         <div class="collapse navbar-collapse">
