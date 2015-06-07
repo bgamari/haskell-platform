@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 // Expanders
 $(document).ready(function() {
-    $('.expander a').click(function() {
+    $('a.expander').click(function() {
         var $this = $(this);
         $this.parents('.downloads-platform').addClass('visible');
     });
