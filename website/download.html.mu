@@ -107,16 +107,22 @@
                                     <div class="step-number">1</div>
                                     <div class="step-body">
                                         <p>Download the installer disk image,</p>
+                                        {{#current}} {{#files}} {{#isOSX}}
                                         <div class="download-btn">
                                             <a href="{{url}}" class="btn btn-haskell" role="button">
-                                                <i class="fa fa-download"></i> Download
+                                                <i class="fa fa-download"></i> Download ({{archBits}} bit)
                                             </a>
                                         </div>
+                                        {{/isOSX}} {{/files}} {{/current}}
 
                                         <div class="download-hash">
                                             You can verify the authenticity of this file by
                                             checking its <strong>SHA-1</strong> hash,
-                                            <code>deadbeef10918383990a7d97d98789e6a9698b</code>.
+                                            <ul class="hashes">
+                                                {{#current}} {{#files}} {{#isOSX}}
+                                                <li>{{archBits}} bit: <code>{{mHash}}</code></li>
+                                                {{/isOSX}} {{/files}} {{/current}}
+                                            </ul>
                                         </div>
                                     </div>
                                 </li>
@@ -150,16 +156,22 @@
                                     <div class="step-number">1</div>
                                     <div class="step-body">
                                         <p>Download the installer,</p>
+                                        {{#current}} {{#files}} {{#isWindows}}
                                         <div class="download-btn">
                                             <a href="{{url}}" class="btn btn-haskell" role="button">
-                                                <i class="fa fa-download"></i> Download
+                                                <i class="fa fa-download"></i> Download ({{archBits}} bit)
                                             </a>
                                         </div>
+                                        {{/isWindows}} {{/files}} {{/current}}
 
-                                        <div class="download-hash">
+                                        <div>
                                             You can verify the authenticity of this file by
                                             checking its <strong>SHA-1</strong> hash,
-                                            <code>deadbeef10918383990a7d97d98789e6a9698b</code>.
+                                            <ul class="hashes">
+                                                {{#current}} {{#files}} {{#isWindows}}
+                                                <li>{{archBits}} bit: <code>{{mHash}}</code></li>
+                                                {{/isWindows}} {{/files}} {{/current}}
+                                            </ul>
                                         </div>
                                     </div>
                                 </li>
@@ -193,16 +205,22 @@
                                     <div class="step-number">1</div>
                                     <div class="step-body">
                                         <p>Download the installation tarball,</p>
+                                        {{#current}} {{#files}} {{#isLinux}}
                                         <div class="download-btn">
                                             <a href="{{url}}" class="btn btn-haskell" role="button">
-                                                <i class="fa fa-download"></i> Download
+                                                <i class="fa fa-download"></i> Download ({{archBits}} bit)
                                             </a>
                                         </div>
+                                        {{/isLinux}} {{/files}} {{/current}}
 
-                                        <div class="download-hash">
+                                        <div>
                                             You can verify the authenticity of this file by
                                             checking its <strong>SHA-1</strong> hash,
-                                            <code>deadbeef10918383990a7d97d98789e6a9698b</code>.
+                                            <ul class="hashes">
+                                                {{#current}} {{#files}} {{#isLinux}}
+                                                <li>{{archBits}} bit: <code>{{mHash}}</code></li>
+                                                {{/isLinux}} {{/files}} {{/current}}
+                                            </ul>
                                         </div>
                                     </div>
                                 </li>

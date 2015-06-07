@@ -94,15 +94,11 @@
     margin: auto;
 }
 
-.download-hash {
-
-}
-
 .install-steps {
     padding-left: 0;
 }
 
-.install-steps li {
+.install-steps > li {
     padding-top: 20px;
     padding-bottom: 40px;
     list-style: none;
@@ -123,6 +119,11 @@
 
 .install-steps .step-body {
     padding-left: 80px; /* this should be the sum of the width and margin-right of the .step-number */
+}
+
+ul.hashes li {
+    list-style: none;
+    white-space: nowrap;
 }
 
 /*
