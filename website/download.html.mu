@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="container " >
+                <div class="container discussion" >
                     <div class="row" >
                         <div class="span6 col-md-6" >
                             <h3>Haskell Platform includes</h3>
@@ -87,12 +87,12 @@
                     <h2>Let's get started</h2>
                 </div>
 
-                <div class="container intro found-user-platform" >
+                <div class="container found-user-platform" >
                     You appear to be using <strong>unknown</strong>. Here is how
                     you can install the Haskell Platform on your system,
                 </div>
 
-                <div class="container intro unknown-user-platform" >
+                <div class="container unknown-user-platform" >
                     Find your operating system of choice below and follow the
                     instructions to install the Haskell Platform on your system.
                 </div>
