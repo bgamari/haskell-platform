@@ -4,7 +4,7 @@
         <meta charset="utf-8"></meta>
         <title>Download Haskell Platform</title>
         <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/packages.js"></script>
+        <script src="js/contents.js"></script>
 
         <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" >
