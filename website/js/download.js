@@ -52,8 +52,6 @@ $(document).ready(function() {
 
         $(".found-user-platform strong").text(platformNames[platform]);
         $("body").addClass('user-platform-known');
-    } else {
-        $('.downloads-platform').addClass('visible');
     }
 });
 
