@@ -38,7 +38,8 @@
     display: none;
 }
 
-.hp {
+.all-platforms {
+    text-align: center;
 }
 
 .download-btn {
