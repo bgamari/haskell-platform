@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="container" id="platforms">
-                    <h1 class="other-platforms">Other Platforms</h1>
+                    <h2 class="other-platforms">Other Operating Systems</h2>
                     <section class="downloads-platform container" data-os="osx" id="osx">
                         <div class="platform-name"><img src="img/os-osx.svg" alt="Mac OS X logo"> <h2>Mac OS X</h2></div>
                         <a class="expander" href="#osx"><div>
