@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Haskell Platform is a batteries-include Haskell distribution">
     </head>
-    <body class="page-downloads">
+    <body class="page-home">
         <div class="wrap">
             <div class="template">
                 <nav class="navbar navbar-default">
@@ -39,19 +39,55 @@
                         </div>
                     </div>
                 </nav>
-                <div class="container"><ol class="breadcrumb"></ol></div>
+
+                <div class="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span6 col-md-6">
+                                <div class="branding">
+                                    <span style="background-image: url(img/logo.png)" class="name">Haskell Platform</span>
+                                    <span class="summary">Install the Haskell Platform</span>
+                                </div>
+                            </div>
+                            <div class="span6 col-md-6">
+                                <div class="branding">
+                                    <span class="tag">
+                                        Haskell with Batteries-Included
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container " >
+                    <div class="row" >
+                        <div class="span6 col-md-6" >
+                            <h3>Haskell Platform includes</h3>
+                            <ul>
+                                <li>the Glasgow Haskell Compiler</li>
+                                <li>the Cabal build system</li>
+                                <li>support for profiling and code coverage analysis</li>
+                                <li>35 core packages to get you up and running</li>
+                            </ul>
+                        </div>
+                        <div class="span6 col-md-6" >
+                            <h3>About Haskell Platform</h3>
+                            The <span class="hp">Haskell Platform</span> is a
+                            cross-platform batteries-included Haskell
+                            distribution designed to get you up and running
+                            quickly.
+                        </div>
+                    </div>
+                </div>
 
                 <div class="container">
-                    <h1>Get Started with the Haskell Platform</h1>
+                    <h2>Let's get started</h2>
+                </div>
 
-                    <p class="intro">
-                        The <span class="hp">Haskell Platform</span> is a batteries-included Haskell distribution
-                        including the GHC compiler, Cabal build system, and 35 of the most
-                        widely used packages to get you up and running quickly.
-                    </p>
-                    <p class="intro found-user-platform" >
-                        You appear to be using <strong>unknown</strong>.
-                    </p>
+                <div class="container intro found-user-platform" >
+                    You appear to be using <strong>unknown</strong>. Here is how
+                    you can install the Haskell Platform on your system,
                 </div>
 
                 <div class="container" id="platforms">
@@ -69,7 +105,7 @@
                                 <strong>2015.01.2</strong>. Note that the
                                 Haskell Platform is only compatible with
                                 <strong>OS X 10.6 and later</strong>.</p>
-                            <p> To get started, perform these simple steps,</p>
+                            <p> To get started, perform these steps,</p>
 
                             <ol class="install-steps">
                                 <li>
@@ -112,7 +148,7 @@
                             <p>
                                 The latest version of the Haskell Platform for Windows is
                                 <strong>2015.01.2</strong>.</p>
-                            <p> To get started, perform these simple steps,</p>
+                            <p> To get started, perform these steps,</p>
 
                             <ol class="install-steps">
                                 <li>
@@ -155,7 +191,7 @@
                             <p>
                                 The latest version of the Haskell Platform for Linux is
                                 <strong>2015.01.2</strong>.</p>
-                            <p> To get started, perform these simple steps,</p>
+                            <p> To get started, perform these steps,</p>
 
                             <ol class="install-steps">
                                 <li>
@@ -178,19 +214,23 @@
                                 <li>
                                     <div class="step-number">2</div>
                                     <div class="step-body">
-                                        Extract the tarball,
-                                        <pre>
-$ tar -zxf haskell-platform-2015.01.2.tar.gz</pre>
+                                        Extract the tarball using
+                                        <pre>$ sudo tar -zx -C /usr \
+    -f haskell-platform-2015.01.2.tar.gz</pre>
                                     </div>
                                 </li>
+                                <!--
                                 <li>
                                     <div class="step-number">3</div>
                                     <div class="step-body">
-                                        Run the installation script,
-                                        <pre>
-$ tar -zxf haskell-platform-2015.01.2.tar.gz</pre>
+                                        <p>Run the installation script with</p>
+                                        <pre>$ ./install-haskell-platform-2015.01.2.sh</pre>
+
+                                        <p>Or instead, if you don't have root access, you can install locally,</p>
+                                        <pre>$ ./install-haskell-platform-2015.01.2.sh --user</pre>
                                     </div>
                                 </li>
+                                -->
                             </ol>
                         </div>
                     </section>

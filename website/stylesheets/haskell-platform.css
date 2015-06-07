@@ -12,22 +12,6 @@
 }
 
 /*
- * Home page
- */
-.page-home .download-btn {
-    width: 30%;
-    margin: 30px auto;
-}
-
-.page-home .download-btn a {
-    padding: 30px;
-}
-
-.bundled ul li {
-    list-style: none;
-}
-
-/*
  * Download
  */
 .intro {
@@ -56,17 +40,18 @@
     margin-right: 80px; /* compensate for offset due to .step-number */
 }
 
+.download-btn a {
+    margin: 10px 10px;
+    padding: 10px 50px;
+    font-size: large;
+}
+
 .preferred-platform .download-btn a {
     background-color: #524A67;
     transition: background-color 600ms;
 }
 .preferred-platform .download-btn a:hover {
     background-color: #6E618D;
-}
-
-.download-btn a {
-    margin: 10px 10px;
-    padding: 10px 50px;
 }
 
 /*
