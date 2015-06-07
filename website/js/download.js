@@ -59,6 +59,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('a.expander').click(function() {
         var $this = $(this);
+        $('.downloads-platform').removeClass('visible');
         $this.parents('.downloads-platform').addClass('visible');
     });
 });
