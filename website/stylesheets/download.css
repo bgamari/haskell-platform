@@ -126,6 +126,15 @@ ul.hashes li {
     white-space: nowrap;
 }
 
+ul.hashes code {
+    max-width: 250px;
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /*
  * expanding expander arrow
  */

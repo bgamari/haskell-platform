@@ -63,3 +63,19 @@ $(document).ready(function() {
         $this.parents('.downloads-platform').addClass('visible');
     });
 });
+
+// Copy hash
+$(document).ready(function() {
+    $('.hashes code').each(function() {
+        var $this = $(this);
+        var $btn = $('<button class="btn btn-default btn-xs"><i class="fa-scissors"></i></button>');
+        $this.before($btn);
+        $btn.click(function() {
+            $btn.remove();
+            var $area = $('<input type="text">').val($this.text());
+            $this.after($area);
+            $this.remove();
+            $area.selectRange(0,-1);
+        });
+    });
+});
