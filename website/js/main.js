@@ -30,6 +30,12 @@ function identifyPlatform() {
     return 'unknown';
 }
 
+var platformNames = {
+    'osx': 'Mac OS X',
+    'linux': 'Linux',
+    'windows': 'Microsoft Windows',
+};
+
 // Infer user's operating system
 $(document).ready(function() {
     var platform = identifyPlatform();
@@ -39,6 +45,9 @@ $(document).ready(function() {
             .prependTo('#platforms')
             .addClass('preferred-platform')
             .addClass('visible');
+
+        $(".found-user-platform strong").text(platformNames[platform]);
+        $(".found-user-platform").show();
     } else {
         $('.downloads-platform').addClass('visible');
     }

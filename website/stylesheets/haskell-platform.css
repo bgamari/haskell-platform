@@ -1,6 +1,6 @@
 .btn-haskell {
 	color: #d1cddc;
-	background-color: #352F44;
+	background-color: #6E618D;
 	border-color: #333;
   margin: 0 0px;
 }
@@ -30,8 +30,20 @@
 /*
  * Download
  */
+.intro {
+    font-size: large;
+}
+
+.found-user-platform {
+    display: none;
+}
+
+.hp {
+}
+
 .download-btn {
     text-align: center;
+    margin-right: 80px; /* compensate for offset due to .step-number */
 }
 
 .preferred-platform .download-btn a {
@@ -40,11 +52,13 @@
 
 .download-btn a {
     margin: 10px 10px;
-    min-width: 30%;
+    padding: 10px 50px;
 }
 
 .downloads-platform {
-    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 500px;
+    margin: auto;
 }
 
 .downloads-platform .content {
@@ -64,6 +78,7 @@
 
 .platform-name {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .platform-name h2 {
@@ -78,16 +93,50 @@
     margin: auto;
 }
 
+.download-hash {
+
+}
+
+.install-steps {
+    padding-left: 0;
+}
+
+.install-steps li {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    list-style: none;
+}
+
+.install-steps .step-number {
+    float: left;
+    font-size: xx-large;
+    background: none repeat scroll 0% 0% #7E788C;
+    border-radius: 100px;
+    color: #fff;
+    text-align: center;
+    margin-right: 30px;
+    width: 50px;
+    /* nudge the text closer to the center */
+    padding-bottom: 2px;
+}
+
+.install-steps .step-body {
+    padding-left: 80px; /* this should be the sum of the width and margin-right of the .step-number */
+}
+
+/*
+ * expanding expander arrow
+ */
 .expander {
     position: relative;
     height: 50px;
-    width: 50px;
-    margin: auto;
+    width: 40px;
+    margin: 10px auto;
 }
 
 .expander img {
     position: absolute;
-    width: 50px;
+    width: 40px;
     display: block;
     transition: all 400ms ease;
 }

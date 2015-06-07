@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- -*- engine:ctemplate -->
 <html>
   <head>
     <meta charset="utf-8"></meta>
@@ -7,6 +8,7 @@
     <script src="js/main.js"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" >
     <link rel="stylesheet" type="text/css" href="stylesheets/fonts/Haskell/style.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/hl.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/haskell-platform.css">
@@ -40,12 +42,15 @@
         <div class="container"><ol class="breadcrumb"></ol></div>
 
         <div class="container">
-          <h1>Download Haskell Platform</h1>
+          <h1>Get Started with the Haskell Platform</h1>
 
-          <p>
-            Haskell Platform is a batteries-included Haskell distribution
-            including the GHC compiler, Cabal build system, and 35 of the most
-            widely used packages to allow you to get up and running quickly.
+          <p class="intro">
+              The <span class="hp">Haskell Platform</span> is a batteries-included Haskell distribution
+              including the GHC compiler, Cabal build system, and 35 of the most
+              widely used packages to get you up and running quickly.
+          </p>
+          <p class="intro found-user-platform" >
+              You appear to be using <strong>unknown</strong>.
           </p>
         </div>
 
@@ -58,26 +63,17 @@
                 <img src="img/expand-piece.svg" class="expand-3">
             </a></div>
             <div class="content">
-              {{#current}}
-              <div class="row span12 download-btn">
-                {{#files}}{{#isOSX}}
-                <a href="{{url}}" class="btn btn-haskell" role="button">
-                  Download - {{archBits}} Bits
-                </a>
-                {{/isOSX}}{{/files}}
-              </div>
-              {{/current}}
-
-              {{#current}} {{#files}}{{#isOSX}}
-              <h4>
-                Haskell Platform {{version}} for {{osNameAndArch}} (10.6 or later)
-              </h4>
+              <p>
+                The latest version of the Haskell Platform for Mac OS X is 2015.01.00.
+              </p>
               <div><strong>SHA-1</strong>: <code>{{mHash}}</code></div>
-              {{/isOSX}}{{/files}} {{/current}}
 
-              <h3>Download Instructions</h3>
               <ol>
-                <li>Double click the package icon to start the installer</li>
+                <li>Download the installation tarball.
+                    <div><a href="{{url}}" class="btn btn-haskell" role="button">
+                        Download - {{archBits}} Bits
+                    </a></div>
+                </li>
                 <li>Follow the instructions</li>
               </ol>
 
@@ -164,20 +160,20 @@
                 {{/isWindows}}{{/files}}
               </div>
               {{/current}}
-  
+
               {{#current}} {{#files}}{{#isWindows}}
               <h4>
                 Haskell Platform {{version}} for {{osNameAndArch}}
               </h4>
               <div><strong>SHA-1:</strong> <code>{{mHash}}</code></div>
               {{/isWindows}}{{/files}} {{/current}}
-  
+
               <h3>Download Instructions</h3>
               <ol>
                 <li>1. Double click the package icon to start the installer</li>
-                <li>2. Follow the instructions</li>
+                <li>2. Install</li>
               </ol>
-  
+
               <h3>Notes</h3>
               <div class="expandable">
                 <h4>Release Notes: </h4>
@@ -185,7 +181,7 @@
             </div>
           </section>
 
-          <section class="downloads-platform container" data-os="linux">
+          <section class="downloads-platform" data-os="linux">
             <div class="platform-name"><img src="img/os-linux.svg" alt="Linux logo"> <h2>Linux</h2></div>
             <div class="expander"><a href="#">
                 <img src="img/expand-piece.svg" class="expand-1">
@@ -193,35 +189,46 @@
                 <img src="img/expand-piece.svg" class="expand-3">
             </a></div>
             <div class="content">
-              {{#current}}
-              <div class="row span12 download-btn">
-              {{#files}}{{#isLinux}}
-              <a href="{{url}}" class="btn btn-haskell" role="button">
-                  Download
-              </a>
-              {{/isLinux}}{{/files}}
-              </div>
-              {{/current}}
+              <p>
+                  The latest version of the Haskell Platform for Linux is
+                  <strong>2015.01.2</strong>.</p>
+              <p> To get started, perform these simple steps,</p>
 
-              {{#current}}
-              {{#files}}{{#isLinux}}
-              <h4>
-              Haskell Platform {{version}} for {{osNameAndArch}}
-              </h4>
-              <div><strong>SHA-1:</strong> <code>{{mHash}}</code></div>
-              {{/isLinux}}{{/files}}
-              {{/current}}
+              <ol class="install-steps">
+                  <li>
+                      <div class="step-number">1</div>
+                      <div class="step-body">
+                        <p>Download the installation tarball,</p>
+                        <div class="download-btn">
+                            <a href="{{url}}" class="btn btn-haskell" role="button">
+                                <i class="fa fa-download"></i> Download
+                            </a>
+                        </div>
 
-              <h3>Download Instructions</h3>
-              <ol>
-              <li>1. Double click the package icon to start the installer</li>
-              <li>2. Follow the instructions</li>
+                        <div class="download-hash">
+                            You can verify the authenticity of this file by
+                            checking its <strong>SHA-1</strong> hash,
+                            <code>deadbeef10918383990a7d97d98789e6a9698b</code>.
+                        </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="step-number">2</div>
+                      <div class="step-body">
+                          Extract the tarball,
+                          <pre>
+$ tar -zxf haskell-platform-2015.01.2.tar.gz</pre>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="step-number">3</div>
+                      <div class="step-body">
+                          Run the installation script,
+                          <pre>
+$ tar -zxf haskell-platform-2015.01.2.tar.gz</pre>
+                      </div>
+                  </li>
               </ol>
-
-              <h3>Notes</h3>
-              <div class="expandable">
-              <h4>Release Notes: </h4>
-              </div>
             </div>
           </section>
         </div>
