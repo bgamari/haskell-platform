@@ -34,14 +34,23 @@
     font-size: large;
 }
 
-.found-user-platform {
-    display: none;
-}
+/*
+ * Style modifications when we know the user's platform
+ */
+.found-user-platform {display: none;}
+.user-platform-known .found-user-platform {display: block;}
+/* display "All Platforms" header only when we know the user's platform */
+.other-platforms {display: none;}
+.user-platform-known .other-platforms {display: block;}
 
-.all-platforms {
+.other-platforms {
     text-align: center;
+    padding-top: 100px;
 }
 
+/*
+ * Download button styling
+ */
 .download-btn {
     text-align: center;
     margin-right: 80px; /* compensate for offset due to .step-number */
@@ -49,6 +58,10 @@
 
 .preferred-platform .download-btn a {
     background-color: #524A67;
+    transition: background-color 600ms;
+}
+.preferred-platform .download-btn a:hover {
+    background-color: #6E618D;
 }
 
 .download-btn a {
@@ -56,6 +69,9 @@
     padding: 10px 50px;
 }
 
+/*
+ * Download platform block styling
+ */
 .downloads-platform {
     padding-top: 50px;
     width: 500px;

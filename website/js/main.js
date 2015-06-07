@@ -47,7 +47,7 @@ $(document).ready(function() {
             .addClass('visible');
 
         $(".found-user-platform strong").text(platformNames[platform]);
-        $(".found-user-platform").show();
+        $("body").addClass('user-platform-known');
     } else {
         $('.downloads-platform').addClass('visible');
     }

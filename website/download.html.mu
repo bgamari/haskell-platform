@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="container" id="platforms">
-                    <h1 class="all-platforms">All Platforms</h1>
+                    <h1 class="other-platforms">Other Platforms</h1>
                     <section class="downloads-platform container" data-os="osx">
                         <div class="platform-name"><img src="img/os-osx.svg" alt="Mac OS X logo"> <h2>Mac OS X</h2></div>
                         <div class="expander"><a href="#">
@@ -65,82 +65,39 @@
                         </a></div>
                         <div class="content">
                             <p>
-                                The latest version of the Haskell Platform for Mac OS X is 2015.01.00.
-                            </p>
-                            <div><strong>SHA-1</strong>: <code>{{mHash}}</code></div>
+                                The latest version of the Haskell Platform for Mac OS X is
+                                <strong>2015.01.2</strong>. Note that the
+                                Haskell Platform is only compatible with
+                                <strong>OS X 10.6 and later</strong>.</p>
+                            <p> To get started, perform these simple steps,</p>
 
-                            <ol>
-                                <li>Download the installation tarball.
-                                    <div><a href="{{url}}" class="btn btn-haskell" role="button">
-                                        Download - {{archBits}} Bits
-                                    </a></div>
+                            <ol class="install-steps">
+                                <li>
+                                    <div class="step-number">1</div>
+                                    <div class="step-body">
+                                        <p>Download the installer disk image,</p>
+                                        <div class="download-btn">
+                                            <a href="{{url}}" class="btn btn-haskell" role="button">
+                                                <i class="fa fa-download"></i> Download
+                                            </a>
+                                        </div>
+
+                                        <div class="download-hash">
+                                            You can verify the authenticity of this file by
+                                            checking its <strong>SHA-1</strong> hash,
+                                            <code>deadbeef10918383990a7d97d98789e6a9698b</code>.
+                                        </div>
+                                    </div>
                                 </li>
-                                <li>Follow the instructions</li>
+                                <li>
+                                    <div class="step-number">2</div>
+                                    <div class="step-body">Run the installer.</div>
+                                </li>
+                                <li>
+                                    <div class="step-number">3</div>
+                                    <div class="step-body">Follow the instructions.</div>
+                                </li>
                             </ol>
-
-                            <h3>Notes</h3>
-                            <div class="expandable">
-                                <h4>Release Notes:</h4>
-                                <ul>
-                                    <li>Works on 10.6, 10.7, 10.8, 10.9, and even 10.10
-                                        beta!</li>
-                                    <li>Works with both gcc and clang based systems.</li>
-                                    <li>Distributed with a build of GHC 7.8.3 that differs from
-                                        the released bindist in two ways: a) it was built
-                                        split-objs for smaller resulting executables, b) it
-                                        includes Cabal-1.18.1.4 which fixes a particularly nasty
-                                        problem with haddock, -XCPP, and clang based systems.
-                                        This ghc-7.8.3 bindist is already incorporated into the
-                                        installer above, but for reference is available
-                                        here: <a href="download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2">ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2</a></li>
-                                    <li>Includes a new experimental <code>activate-hs</code>
-                                        command that can switch between multiple installed
-                                        versions of the platform</li>
-                                    <li>The cabal command is wrapped to provide a smoother file
-                                        layout on the Mac. The wrapping only updates
-                                        the <code>~/.cabal/config</code> file the first time you
-                                        run it. Please pay attention to its output. If you have
-                                        a custom config file, you'll want to update it, as
-                                        Cabal's defaults have changed.</li>
-                                </ul>
-
-                                <h4>General Notes:</h4>
-                                <p><em>The command line development tools are required prior to
-                                    installation.</em> <br>If you have <tt>/usr/bin/ld</tt>
-                                    available in a shell, you should be good to go. If not:</p>
-                                <ul>
-                                    <li><p>On OS 10.7 or later, choose one of the following:</p>
-                                        <ul>
-                                            <li><p>Download and install <strong>Command Line
-                                                Tools for Xcode</strong>. Despite the name, you
-                                                don't need Xcode installed!</p></li>
-
-                                            <li><p>After installing Xcode (4.3 or later),
-                                                choose <strong>Preferences</strong>, then pick
-                                                the <strong>Downloads</strong> panel. There you can
-                                                download and install the <strong>Command Line
-                                                Tools</strong> as an optional component. This
-                                                installs the same package as listed in the above
-                                                option.</p></li>
-
-                                            <li><p>If you have Xcode prior to 4.3, depending on
-                                                how you installed it, you may already have the
-                                                command line tools. If not, consider the first
-                                                option above.</p></li>
-                                        </ul></li>
-
-                                    <li><p>On OS 10.6, 32-bit, use Xcode 3.2 or later: Choose
-                                        the "Customize…" button during installation and
-                                        choose <strong>UNIX Development</strong>. 64-bit version
-                                        requires Xcode 4.1 or later.</p></li>
-
-                                    <li><p><em>The command line tools and/or Xcode can be
-                                        downloaded for free from
-                                        <a href="http://developer.apple.com">Apple's developer
-                                            website</a>, you do need to register as a developer (also
-                                        free).</em></p></li>
-                                </ul>
-                            </div>
                         </div>
                     </section>
 
