@@ -63,14 +63,14 @@
 }
 
 .downloads-platform .content {
-    overflow: hidden;
-    height: 0px;
-    transition: height 600ms;
+    overflow-y: hidden;
+    max-height: 0;
+    transition: max-height 600ms ease;
 }
 
 .downloads-platform.visible .content {
-    transition: height 600ms;
-    height: auto;
+    max-height: 9999px; /* web development is still terrible */
+    transition: max-height 600ms ease 200ms;
 }
 
 .downloads-platform.visible .expander {
