@@ -22,6 +22,10 @@ function identifyPlatform() {
         'Linux': 'linux',
         'Windows': 'windows'
     };
+
+    if (ua.indexOf('Android') != -1)
+        return 'unknown';
+
     for (key in userAgents) {
         if (ua.indexOf(key) != -1) {
             return userAgents[key];
