@@ -42,7 +42,7 @@
                 <div class="header">
                     <div class="container">
                         <div class="row">
-                            <div class="span6 col-md-6">
+                            <div class="span12 col-md-12">
                                 <div class="branding">
                                     <span style="background-image: url(img/logo.png)" class="name">Haskell Platform</span>
                                     <span class="summary">
