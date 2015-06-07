@@ -46,14 +46,14 @@
                             <div class="span6 col-md-6">
                                 <div class="branding">
                                     <span style="background-image: url(img/logo.png)" class="name">Haskell Platform</span>
-                                    <span class="summary">Install the Haskell Platform</span>
+                                    <span class="summary">
+                                        Haskell with batteries-included
+                                    </span>
                                 </div>
                             </div>
                             <div class="span6 col-md-6">
                                 <div class="branding">
-                                    <span class="tag">
-                                        Haskell with Batteries-Included
-                                    </span>
+                                    <span class="tag"></span>
                                 </div>
                             </div>
                         </div>
