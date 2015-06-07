@@ -62,7 +62,7 @@
                                             <li>the Glasgow Haskell Compiler</li>
                                             <li>the Cabal build system</li>
                                             <li>support for profiling and code coverage analysis</li>
-                                            <li>35 core & widely-used packages</li>
+                                            <li>35 core & widely-used <a href="contents.html">packages</a></li>
                                         </ul>
                                     </span>
                                 </div>
