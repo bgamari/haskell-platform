@@ -76,8 +76,8 @@
                 </div>
 
                 <div class="container found-user-platform" >
-                    You appear to be using <strong>unknown</strong>. Here is how
-                    you can install the Haskell Platform on your system,
+                    You appear to be using <strong>unknown</strong>. For other
+                    operating systems see <a href="#other-platforms">below</a>.
                 </div>
 
                 <div class="container unknown-user-platform" >
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="container" id="platforms">
-                    <h2 class="other-platforms">Other Operating Systems</h2>
+                    <h2 id="other-platforms" class="other-platforms">Other Operating Systems</h2>
                     <section class="downloads-platform container" data-os="osx" id="osx">
                         <div class="platform-name"><img src="img/os-osx.svg" alt="Mac OS X logo"> <h2>Mac OS X</h2></div>
                         <a class="expander" href="#osx"><div>
