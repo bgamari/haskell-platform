@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" >
         <link rel="stylesheet" type="text/css" href="stylesheets/fonts/Haskell/style.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/hl.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/haskell-platform.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/download.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css" rel="stylesheet">
 
         <link rel="icon" type="image/png" href="img/favicon.png">
