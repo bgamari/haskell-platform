@@ -92,6 +92,11 @@
                     you can install the Haskell Platform on your system,
                 </div>
 
+                <div class="container intro unknown-user-platform" >
+                    Find your operating system of choice below and follow the
+                    instructions to install the Haskell Platform on your system.
+                </div>
+
                 <div class="container" id="platforms">
                     <h1 class="other-platforms">Other Platforms</h1>
                     <section class="downloads-platform container" data-os="osx" id="osx">

@@ -19,11 +19,14 @@
 }
 
 /*
- * Style modifications when we know the user's platform
+ * Style modifications for user platform identification
  */
+/* Show only when we can't identify user's platform */
+.user-platform-known .unknown-user-platform {display: none;}
+/* When we can find the user's platform, tell them what we found */
 .found-user-platform {display: none;}
 .user-platform-known .found-user-platform {display: block;}
-/* display "All Platforms" header only when we know the user's platform */
+/* Show "All Platforms" header only when we know the user's platform */
 .other-platforms {display: none;}
 .user-platform-known .other-platforms {display: block;}
 
