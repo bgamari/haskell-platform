@@ -73,10 +73,12 @@
                         </div>
                         <div class="span6 col-md-6" >
                             <h3>About Haskell Platform</h3>
-                            The <span class="hp">Haskell Platform</span> is a
-                            cross-platform batteries-included Haskell
-                            distribution designed to get you up and running
-                            quickly.
+                            <p>The <span class="hp">Haskell Platform</span> is a
+                                cross-platform Haskell distribution designed to get
+                                you up and running quickly.</p>
+                            <p>You get a compiler, development tools, and a set
+                                of widely-used packages to make it easy to dive into
+                                Haskell.</p>
                         </div>
                     </div>
                 </div>
