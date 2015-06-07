@@ -65,12 +65,12 @@
 .downloads-platform .content {
     overflow-y: hidden;
     max-height: 0;
-    transition: max-height 600ms ease;
+    transition: max-height 800ms ease;
 }
 
 .downloads-platform.visible .content {
-    max-height: 9999px; /* web development is still terrible */
-    transition: max-height 600ms ease 200ms;
+    max-height: 2000px; /* web development is still terrible */
+    transition: max-height 1000ms ease 0ms;
 }
 
 .downloads-platform.visible .expander {
