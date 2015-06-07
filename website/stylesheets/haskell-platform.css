@@ -129,11 +129,12 @@
 /*
  * expanding expander arrow
  */
-.expander {
+.expander div {
     position: relative;
     height: 50px;
     width: 40px;
     margin: 10px auto;
+    display: block;
 }
 
 .expander img {

@@ -92,13 +92,13 @@
 
                 <div class="container" id="platforms">
                     <h1 class="other-platforms">Other Platforms</h1>
-                    <section class="downloads-platform container" data-os="osx">
+                    <section class="downloads-platform container" data-os="osx" id="osx">
                         <div class="platform-name"><img src="img/os-osx.svg" alt="Mac OS X logo"> <h2>Mac OS X</h2></div>
-                        <div class="expander"><a href="#">
+                        <a class="expander" href="#osx"><div>
                             <img src="img/expand-piece.svg" class="expand-1">
                             <img src="img/expand-piece.svg" class="expand-2">
                             <img src="img/expand-piece.svg" class="expand-3">
-                        </a></div>
+                        </div></a>
                         <div class="content">
                             <p>
                                 The latest version of the Haskell Platform for Mac OS X is
@@ -137,13 +137,13 @@
                         </div>
                     </section>
 
-                    <section class="downloads-platform container" data-os="windows">
+                    <section class="downloads-platform container" data-os="windows" id="windows">
                         <div class="platform-name"><img src="img/os-windows.svg" alt="Windows logo"> <h2>Windows</h2></div>
-                        <div class="expander"><a href="#">
+                        <a class="expander" href="#windows"><div>
                             <img src="img/expand-piece.svg" class="expand-1">
                             <img src="img/expand-piece.svg" class="expand-2">
                             <img src="img/expand-piece.svg" class="expand-3">
-                        </a></div>
+                        </div></a>
                         <div class="content">
                             <p>
                                 The latest version of the Haskell Platform for Windows is
@@ -180,13 +180,13 @@
                         </div>
                     </section>
 
-                    <section class="downloads-platform" data-os="linux">
+                    <section class="downloads-platform" data-os="linux" id="linux">
                         <div class="platform-name"><img src="img/os-linux.svg" alt="Linux logo"> <h2>Linux</h2></div>
-                        <div class="expander"><a href="#">
+                        <a class="expander" href="#linux"><div>
                             <img src="img/expand-piece.svg" class="expand-1">
                             <img src="img/expand-piece.svg" class="expand-2">
                             <img src="img/expand-piece.svg" class="expand-3">
-                        </a></div>
+                        </div></a>
                         <div class="content">
                             <p>
                                 The latest version of the Haskell Platform for Linux is
