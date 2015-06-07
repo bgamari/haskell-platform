@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"></meta>
-        <title>Download Haskell Platform</title>
+        <title>Haskell Platform - Included Packages</title>
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/contents.js"></script>
 
