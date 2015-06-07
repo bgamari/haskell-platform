@@ -2,10 +2,15 @@
     font-style: italic;
 }
 
+.history tr td:nth-child(1n+3) {
+    color: #999;
+}
+
 .history:hover td {
     opacity: 0.3;
 }
 
 .history:hover tr:hover td {
     opacity: 1.0;
+    color: #000;
 }
