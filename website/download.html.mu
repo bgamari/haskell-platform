@@ -77,7 +77,7 @@
                                 cross-platform Haskell distribution designed to get
                                 you up and running quickly.</p>
                             <p>You get a compiler, development tools, and a set
-                                of widely-used packages to make it easy to dive into
+                                of widely-used packages, making it easy to dive into
                                 Haskell.</p>
                         </div>
                     </div>
