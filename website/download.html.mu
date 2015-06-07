@@ -52,32 +52,21 @@
                             </div>
                             <div class="span6 col-md-6">
                                 <div class="branding">
-                                    <span class="tag"></span>
+                                    <span class="tag">
+                                        <h3>A multi-OS distribution</h3>
+
+                                        <p>designed to get you up and running
+                                            quickly, make it easy to focus on using
+                                            Haskell. You get:</p>
+                                        <ul>
+                                            <li>the Glasgow Haskell Compiler</li>
+                                            <li>the Cabal build system</li>
+                                            <li>support for profiling and code coverage analysis</li>
+                                            <li>35 core & widely-used packages</li>
+                                        </ul>
+                                    </span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container discussion" >
-                    <div class="row" >
-                        <div class="span6 col-md-6" >
-                            <h3>Haskell Platform includes</h3>
-                            <ul>
-                                <li>the Glasgow Haskell Compiler</li>
-                                <li>the Cabal build system</li>
-                                <li>support for profiling and code coverage analysis</li>
-                                <li>35 core <a href="contents.html">packages</a> to get you up and running</li>
-                            </ul>
-                        </div>
-                        <div class="span6 col-md-6" >
-                            <h3>About Haskell Platform</h3>
-                            <p>The <span class="hp">Haskell Platform</span> is a
-                                cross-platform Haskell distribution designed to get
-                                you up and running quickly.</p>
-                            <p>You get a compiler, development tools, and a set
-                                of widely-used packages, making it easy to dive into
-                                Haskell.</p>
                         </div>
                     </div>
                 </div>
