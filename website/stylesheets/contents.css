@@ -1,3 +1,11 @@
 .history .version {
     font-style: italic;
 }
+
+.history:hover td {
+    opacity: 0.3;
+}
+
+.history:hover tr:hover td {
+    opacity: 1.0;
+}
