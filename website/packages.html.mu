@@ -60,6 +60,7 @@
                 </div>
 
                 <div class="container">
+                    <h1>Included packages</h1>
                     <p>
                         Along with a compiler and basic development environment, Haskell Platform provides
                         a variety of widely-used packages from <a href="http://hackage.haskell.org/">Hackage</a>, the
