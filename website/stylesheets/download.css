@@ -155,10 +155,12 @@ ul.hashes code {
 .sidebar.flavors.chosen ul li {opacity: 0.3;}
 .sidebar.flavors.chosen ul li:hover {opacity: 1.0;}
 .sidebar.flavors.chosen ul li.active {opacity: 1.0;}
-.sidebar.flavors.chosen strong {opacity: 0;}
-.sidebar.flavors h3 {
-    opacity: 1.0;
-    transition: opacity 1s ease;
+.sidebar.flavors.chosen strong {height: 0;}
+.sidebar.flavors strong {
+    display: block;
+    height: 2em;
+    overflow: hidden;
+    transition: height 200ms ease;
 }
 
 .flavors ul {
