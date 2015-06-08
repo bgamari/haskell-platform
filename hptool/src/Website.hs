@@ -88,7 +88,7 @@ historyCtx = mkStrContext outerCtx
     ctx "ncols" = MuVariable $ length releasesNewToOld + 1
     ctx "sections" = MuList
         [ sectionCtx "Compiler"                            [isGhc, not . isLib]
-        , sectionCtx "Core Libraries, Provided with GHC"   [isGhc, isLib]
+        , sectionCtx "Core Libraries, provided with GHC"   [isGhc, isLib]
         , sectionCtx "Additional Platform Libraries"       [not . isGhc, isLib]
         , sectionCtx "Programs and Tools"                  [isTool]
         ]
