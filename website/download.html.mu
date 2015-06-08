@@ -76,8 +76,9 @@
                 </div>
 
                 <div class="container found-user-platform" >
-                    You appear to be using <strong>unknown</strong>. For other
-                    operating systems see <a href="#other-platforms">below</a>.
+                    You appear to be using <strong>unknown</strong>.
+                    See <a href="#other-platforms">below</a> for other
+                    operating systems.
                 </div>
 
                 <div class="container unknown-user-platform" >
