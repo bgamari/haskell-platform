@@ -217,6 +217,9 @@
                                 <li><a href="#linux-mint"><img alt="Linux Mint logo" class="logo" src="img/distro-mint.svg">Mint</a></li>
                                 <li><a href="#linux-gentoo"><img alt="Gentoo Linux logo" class="logo" src="img/distro-gentoo.svg">Gentoo</a></li>
                             </ul>
+
+                            <p class="select-generic">If you can't find your distribution then
+                                select <strong>Generic</strong>.</p>
                         </div>
 
                         <div class="content">
@@ -225,10 +228,6 @@
                                 <p>
                                     Please select your Linux distribution in the
                                     list on the right.
-                                </p>
-                                <p>
-                                    If you can't find your distribution then
-                                    select <strong>Generic</strong>.
                                 </p>
                                 <div class="point-to-flavors-list"><i class="fa fa-arrow-right"></i></div>
                             </div>

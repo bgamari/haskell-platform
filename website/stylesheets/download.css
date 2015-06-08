@@ -171,8 +171,9 @@ ul.hashes code {
 .sidebar.flavors.chosen ul li {opacity: 0.3;}
 .sidebar.flavors.chosen ul li:hover {opacity: 1.0;}
 .sidebar.flavors.chosen ul li.active {opacity: 1.0;}
-.sidebar.flavors.chosen strong {height: 0;}
-.sidebar.flavors strong {
+.sidebar.flavors.chosen > p.select-generic {display: none;}
+.sidebar.flavors.chosen > strong {height: 0;}
+.sidebar.flavors > strong {
     display: block;
     height: 2em;
     overflow: hidden;
