@@ -155,12 +155,21 @@ ul.hashes code {
     display: block;
 }
 
-ul.flavors {
+.sidebar.flavors.chosen ul li {opacity: 0.3;}
+.sidebar.flavors.chosen ul li:hover {opacity: 1.0;}
+.sidebar.flavors.chosen ul li.active {opacity: 1.0;}
+.sidebar.flavors.chosen strong {opacity: 0;}
+.sidebar.flavors h3 {
+    opacity: 1.0;
+    transition: opacity 1s ease;
+}
+
+.flavors ul {
     margin-top: 10px;
     padding: 0;
 }
 
-ul.flavors li {
+.flavors ul li {
     list-style: none;
     display: inline-block;
     padding: 5px;
@@ -170,16 +179,15 @@ ul.flavors li {
     border-radius: 20px;
 }
 
-ul.flavors li.active {
-    /*background-color: #ddd;*/
+.flavors ul li.active {
     border: 1px solid #7E788C;
 }
 
-ul.flavors li:hover {
+.flavors ul li:hover {
     background-color: #eee;
 }
 
-ul.flavors li .logo {
+.flavors ul li .logo {
     display: block;
     margin: 0 auto;
     height: 50px;

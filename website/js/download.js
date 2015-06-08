@@ -85,6 +85,7 @@ $(document).ready(function() {
     $('#linux .flavors li a').click(function() {
         var $this = $(this);
         var distro = $(this).attr('href');
+        $(this).parents('.sidebar').addClass('chosen');
         $(this).parents('ul').children('li').removeClass('active');
         $(this).parents('li').addClass('active');
         $('#linux .flavor').removeClass('active');

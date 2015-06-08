@@ -195,9 +195,9 @@
                             <img src="img/expand-piece.svg" class="expand-3">
                         </div></a>
 
-                        <div class="sidebar">
+                        <div class="sidebar flavors">
                             <strong>Choose your distribution</strong>
-                            <ul class="flavors">
+                            <ul>
                                 <li><a href="#linux-generic"><span class="logo"><i class="fa fa-cogs"></i></span>Generic</a></li>
                                 <li><a href="#linux-ubuntu"><img class="logo" src="img/distro-ubuntu.svg">Ubuntu</a></li>
                                 <li><a href="#linux-debian"><img class="logo" src="img/distro-debian.svg">Debian</a></li>
