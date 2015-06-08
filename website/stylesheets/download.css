@@ -197,6 +197,14 @@ ul.flavors li .logo {
     display: block;
 }
 
+.point-to-flavors-list {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    color: #ddd;
+    font-size: 100px;
+}
+
 /*
  * expanding expander arrow
  */

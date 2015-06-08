@@ -198,7 +198,7 @@
                         <div class="sidebar">
                             <strong>Choose your distribution</strong>
                             <ul class="flavors">
-                                <li class="active"><a href="#linux-generic"><span class="logo"><i class="fa fa-cogs"></i></span>Generic</a></li>
+                                <li><a href="#linux-generic"><span class="logo"><i class="fa fa-cogs"></i></span>Generic</a></li>
                                 <li><a href="#linux-ubuntu"><img class="logo" src="img/distro-ubuntu.svg">Ubuntu</a></li>
                                 <li><a href="#linux-debian"><img class="logo" src="img/distro-debian.svg">Debian</a></li>
                                 <li><a href="#linux-redhat"><img class="logo" src="img/distro-redhat.svg">Redhat</a></li>
@@ -206,13 +206,27 @@
                         </div>
 
                         <div class="content">
-                            <div id="linux-generic" class="flavor active">
+                            <div class="flavor active">
+                                <h2>Select your distribution</h2>
+                                <p>
+                                    Please select your Linux distribution in the
+                                    list on the right.
+                                </p>
+                                <p>
+                                    If you can't find your distribution then
+                                    select <strong>Generic</strong>.
+                                </p>
+                                <div class="point-to-flavors-list"><i class="fa fa-arrow-right"></i></div>
+                            </div>
+
+                            <div id="linux-generic" class="flavor">
                                 <p>
                                     This is a <strong>generic</strong>
                                     distribution of the Haskell Platform. While
                                     it should work on most modern Linux
-                                    distributions, you probably want to select
-                                    your particular distribution of choice on the right.
+                                    distributions, you should use one of the
+                                    distribution-specific options listed on the
+                                    right if possible.
                                 </p>
                                 <p>
                                     The latest version of the Haskell Platform for Linux is
