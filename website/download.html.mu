@@ -302,7 +302,7 @@
 
                             <div id="linux-mint" class="flavor">
                                 <p>Good news! Haskell Platform is already
-                                    available in your distribution package
+                                    available in your distribution's package
                                     <a href="http://community.linuxmint.com/software/view/haskell-platform">repository</a>.</p>
                                 <p>Simply run,</p>
                                 <pre>$ sudo apt-get install haskell-platform</pre>
