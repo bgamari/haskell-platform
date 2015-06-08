@@ -96,21 +96,10 @@ $(document).ready(function() {
         $(this).parents('li').addClass('active');
         $('#linux .flavor').removeClass('active');
         $(distro).addClass('active');
-    });
-});
 
-// Smooth scrolling to anchor links
-// Complements of Bill Erickson: http://www.billerickson.net/code/smooth-scrolling-anchor-links/
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        || location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-            $('html,body').animate({
-                scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    }
+        $('html,body').animate({
+            scrollTop: $('#linux').offset().top
+        }, 1000);
+        return true;
+    });
 });
