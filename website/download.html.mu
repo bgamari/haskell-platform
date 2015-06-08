@@ -129,7 +129,7 @@
                                             checking its <strong>SHA-1</strong> hash,
                                             <ul class="hashes">
                                                 {{#current}} {{#files}} {{#isOSX}}
-                                                <li>{{archBits}} bit: <code>{{mHash}}</code></li>
+                                                <li>{{archBits}} bit: <input readonly class="file-hash" type="text" value="{{mHash}}"></li>
                                                 {{/isOSX}} {{/files}} {{/current}}
                                             </ul>
                                         </div>
@@ -179,7 +179,7 @@
                                             checking its <strong>SHA-1</strong> hash,
                                             <ul class="hashes">
                                                 {{#current}} {{#files}} {{#isWindows}}
-                                                <li>{{archBits}} bit: <code>{{mHash}}</code></li>
+                                                <li>{{archBits}} bit: <input readonly class="file-hash" type="text" value="{{mHash}}"></li>
                                                 {{/isWindows}} {{/files}} {{/current}}
                                             </ul>
                                         </div>
@@ -265,7 +265,7 @@
                                                 checking its <strong>SHA-1</strong> hash,
                                                 <ul class="hashes">
                                                     {{#current}} {{#files}} {{#isLinux}}
-                                                    <li>{{archBits}} bit: <code>{{mHash}}</code></li>
+                                                    <li>{{archBits}} bit: <input readonly class="file-hash" type="text" value="{{mHash}}"></li>
                                                     {{/isLinux}} {{/files}} {{/current}}
                                                 </ul>
                                             </div>

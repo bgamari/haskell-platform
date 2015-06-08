@@ -141,13 +141,16 @@ ul.hashes li {
     white-space: nowrap;
 }
 
-ul.hashes code {
-    max-width: 250px;
+ul.hashes input.file-hash {
+    width: 300px;
     text-overflow: ellipsis;
     whitespace: nowrap;
     overflow: hidden;
     display: inline-block;
     vertical-align: middle;
+    background-color: #f5f5f5;
+    color: #366354;
+    border: none;
 }
 
 /*

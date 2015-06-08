@@ -71,17 +71,8 @@ $(document).ready(function() {
 
 // Copy hash
 $(document).ready(function() {
-    $('.hashes code').each(function() {
-        var $this = $(this);
-        var $btn = $('<button class="btn btn-default btn-xs"><i class="fa fa-scissors"></i></button>');
-        $this.before($btn);
-        $btn.click(function() {
-            $btn.remove();
-            var $area = $('<input style="width: 300px;" type="text">').val($this.text());
-            $this.after($area);
-            $this.remove();
-            $area.selectRange(0,-1);
-        });
+    $('.hashes .file-hash').each(function() {
+        $(this).click(function() {this.select();})
     });
 });
 
