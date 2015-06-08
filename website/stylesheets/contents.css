@@ -2,7 +2,8 @@
     font-style: italic;
 }
 
-.history tr.section-header {
+.history tr.section-header th {
+    padding-top: 2em;
     font-size: large;
 }
 
