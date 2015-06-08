@@ -172,15 +172,16 @@ ul.hashes input.file-hash {
 }
 
 .sidebar.flavors.chosen ul li {opacity: 0.3;}
-.sidebar.flavors.chosen ul li:hover {opacity: 1.0;}
-.sidebar.flavors.chosen ul li.active {opacity: 1.0;}
-.sidebar.flavors.chosen > p.select-generic {display: none;}
-.sidebar.flavors.chosen > strong {height: 0;}
+.sidebar.flavors.chosen ul li:hover {opacity: 1;}
+.sidebar.flavors.chosen ul li.active {opacity: 1;}
+.sidebar.flavors > p.select-generic {opacity: 1;}
+.sidebar.flavors.chosen > p.select-generic {opacity: 0.3;}
+.sidebar.flavors.chosen:hover > p.select-generic {opacity: 1;}
+.sidebar.flavors.chosen > strong {opacity: 0.3;}
+.sidebar.flavors.chosen:hover > strong {opacity: 1;}
 .sidebar.flavors > strong {
-    display: block;
-    height: 2em;
-    overflow: hidden;
-    transition: height 200ms ease;
+    opacity: 1;
+    transition: opacity 400ms ease;
 }
 
 .flavors ul {
