@@ -188,7 +188,7 @@
                         </div>
                     </section>
 
-                    <section class="downloads-platform" data-os="linux" id="linux">
+                    <section class="downloads-platform container" data-os="linux" id="linux">
                         <div class="platform-name"><img src="img/os-linux.svg" alt="Linux logo"> <h2>Linux</h2></div>
                         <a class="expander" href="#linux"><div>
                             <img src="img/expand-piece.svg" class="expand-1">
