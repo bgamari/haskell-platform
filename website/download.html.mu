@@ -59,8 +59,8 @@
                                             quickly, making it easy to focus on using
                                             Haskell. You get:</p>
                                         <ul>
-                                            <li>the Glasgow Haskell Compiler</li>
-                                            <li>the Cabal build system</li>
+                                            <li>the <a href="http://www.haskell.org/ghc/">Glasgow Haskell Compiler</a></li>
+                                            <li>the <a href="http://www.haskell.org/cabal/">Cabal build system</a></li>
                                             <li>support for profiling and code coverage analysis</li>
                                             <li>35 core & widely-used <a href="contents.html">packages</a></li>
                                         </ul>
