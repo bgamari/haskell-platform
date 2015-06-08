@@ -24,7 +24,7 @@
                     <div class="container">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="/">
-                                <span class="logo"></span>
+                                <span class="logo">&#xe600;</span>
                                 Haskell
                             </a>
                         </div>
