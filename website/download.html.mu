@@ -187,11 +187,11 @@
                                 </li>
                                 <li>
                                     <div class="step-number">2</div>
-                                    <div class="step-body">Run the installer.</div>
+                                    <div class="step-body">Run the installer and follow the instructions.</div>
                                 </li>
                                 <li>
                                     <div class="step-number">3</div>
-                                    <div class="step-body">Follow the instructions.</div>
+                                    <div class="step-body">Start WinGHCi from the Start menu and have fun!</div>
                                 </li>
                             </ol>
                         </div>
