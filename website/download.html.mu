@@ -56,7 +56,7 @@
                                         <h3>A multi-OS distribution</h3>
 
                                         <p>designed to get you up and running
-                                            quickly, make it easy to focus on using
+                                            quickly, making it easy to focus on using
                                             Haskell. You get:</p>
                                         <ul>
                                             <li>the Glasgow Haskell Compiler</li>
