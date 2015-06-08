@@ -1,14 +1,14 @@
 .btn-haskell {
-	color: #d1cddc;
-	background-color: #6E618D;
-	border-color: #333;
-  margin: 0 0px;
+	  color: #d1cddc;
+	  background-color: #6E618D;
+	  border-color: #333;
+    margin: 0 0px;
 }
 
 .btn-haskell.active, .btn-haskell.focus, .btn-haskell:active, .btn-haskell:focus,
 .btn-haskell:hover,.open > .dropdown-toggle.btn-haskell {
-	color: #fff;
-	border-color: #204d74;
+	  color: #fff;
+	  border-color: #204d74;
 }
 
 /*
