@@ -290,6 +290,9 @@
             </div>
         </div>
 
+        <!-- a bit of whitespace before the footer -->
+        <div style="height: 100px;"></div>
+
         <div class="footer">
             <div class="container">
                 <p>
