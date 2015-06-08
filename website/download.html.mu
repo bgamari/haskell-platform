@@ -362,6 +362,6 @@ $ sudo emerge haskell-platform</pre>
                     </span>
                 </p>
             </div>
-    </footer>
+        </div>
     </body>
 </html>
