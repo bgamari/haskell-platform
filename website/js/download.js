@@ -79,3 +79,15 @@ $(document).ready(function() {
         });
     });
 });
+
+// Linux flavors
+$(document).ready(function() {
+    $('#linux .flavors li a').click(function() {
+        var $this = $(this);
+        var distro = $(this).attr('href');
+        $(this).parents('ul').children('li').removeClass('active');
+        $(this).parents('li').addClass('active');
+        $('#linux .flavor').removeClass('active');
+        $(distro).addClass('active');
+    });
+});

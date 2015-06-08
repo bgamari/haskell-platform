@@ -58,11 +58,13 @@
  */
 .downloads-platform {
     padding-top: 50px;
-    width: 500px;
     margin: auto;
+    position: relative; /* position to give sidebars an anchor */
 }
 
 .downloads-platform .content {
+    margin: auto;
+    width: 500px;
     overflow-y: hidden;
     max-height: 0;
     transition: max-height 800ms ease;
@@ -133,6 +135,66 @@ ul.hashes code {
     overflow: hidden;
     display: inline-block;
     vertical-align: middle;
+}
+
+/*
+ * Operating system flavor list
+ */
+.sidebar {
+    width: 300px;
+    right: -100px;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid #ddd;
+    display: none;
+}
+
+.visible .sidebar {
+    display: block;
+}
+
+ul.flavors {
+    margin-top: 10px;
+    padding: 0;
+}
+
+ul.flavors li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+ul.flavors li.active {
+    /*background-color: #ddd;*/
+    border: 1px solid #7E788C;
+}
+
+ul.flavors li:hover {
+    background-color: #eee;
+}
+
+ul.flavors li .logo {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #000;
+}
+
+.flavor {
+    display: none;
+}
+
+.flavor.active {
+    display: block;
 }
 
 /*

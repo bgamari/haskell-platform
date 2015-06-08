@@ -194,58 +194,82 @@
                             <img src="img/expand-piece.svg" class="expand-2">
                             <img src="img/expand-piece.svg" class="expand-3">
                         </div></a>
-                        <div class="content">
-                            <p>
-                                The latest version of the Haskell Platform for Linux is
-                                <strong>2015.01.2</strong>.</p>
-                            <p> To get started perform these steps,</p>
 
-                            <ol class="install-steps">
-                                <li>
-                                    <div class="step-number">1</div>
-                                    <div class="step-body">
-                                        <p>Download the installation tarball,</p>
-                                        {{#current}} {{#files}} {{#isLinux}}
-                                        <div class="download-btn">
-                                            <a href="{{url}}" class="btn btn-haskell" role="button">
-                                                <i class="fa fa-download"></i> Download ({{archBits}} bit)
-                                            </a>
-                                        </div>
-                                        {{/isLinux}} {{/files}} {{/current}}
-
-                                        <div>
-                                            You can verify the authenticity of this file by
-                                            checking its <strong>SHA-1</strong> hash,
-                                            <ul class="hashes">
-                                                {{#current}} {{#files}} {{#isLinux}}
-                                                <li>{{archBits}} bit: <code>{{mHash}}</code></li>
-                                                {{/isLinux}} {{/files}} {{/current}}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="step-number">2</div>
-                                    <div class="step-body">
-                                        Extract the tarball using
-                                        <pre>$ sudo tar -zx -C /usr \
-    -f haskell-platform-2015.01.2.tar.gz</pre>
-                                    </div>
-                                </li>
-                                <!--
-                                <li>
-                                    <div class="step-number">3</div>
-                                    <div class="step-body">
-                                        <p>Run the installation script with</p>
-                                        <pre>$ ./install-haskell-platform-2015.01.2.sh</pre>
-
-                                        <p>Or instead, if you don't have root access, you can install locally,</p>
-                                        <pre>$ ./install-haskell-platform-2015.01.2.sh --user</pre>
-                                    </div>
-                                </li>
-                                -->
-                            </ol>
+                        <div class="sidebar">
+                            <strong>Choose your distribution</strong>
+                            <ul class="flavors">
+                                <li class="active"><a href="#linux-generic"><span class="logo"><i class="fa fa-cogs"></i></span>Generic</a></li>
+                                <li><a href="#linux-ubuntu"><img class="logo" src="img/distro-ubuntu.svg">Ubuntu</a></li>
+                                <li><a href="#linux-debian"><img class="logo" src="img/distro-debian.svg">Debian</a></li>
+                                <li><a href="#linux-redhat"><img class="logo" src="img/distro-redhat.svg">Redhat</a></li>
+                            </ul>
                         </div>
+
+                        <div class="content">
+                            <div id="linux-generic" class="flavor active">
+                                <p>
+                                    This is a <strong>generic</strong>
+                                    distribution of the Haskell Platform. While
+                                    it should work on most modern Linux
+                                    distributions, you probably want to select
+                                    your particular distribution of choice on the right.
+                                </p>
+                                <p>
+                                    The latest version of the Haskell Platform for Linux is
+                                    <strong>2015.01.2</strong>.</p>
+                                <p> To get started perform these steps,</p>
+
+                                <ol class="install-steps">
+                                    <li>
+                                        <div class="step-number">1</div>
+                                        <div class="step-body">
+                                            <p>Download the installation tarball,</p>
+                                            {{#current}} {{#files}} {{#isLinux}}
+                                            <div class="download-btn">
+                                                <a href="{{url}}" class="btn btn-haskell" role="button">
+                                                    <i class="fa fa-download"></i> Download ({{archBits}} bit)
+                                                </a>
+                                            </div>
+                                            {{/isLinux}} {{/files}} {{/current}}
+
+                                            <div>
+                                                You can verify the authenticity of this file by
+                                                checking its <strong>SHA-1</strong> hash,
+                                                <ul class="hashes">
+                                                    {{#current}} {{#files}} {{#isLinux}}
+                                                    <li>{{archBits}} bit: <code>{{mHash}}</code></li>
+                                                    {{/isLinux}} {{/files}} {{/current}}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="step-number">2</div>
+                                        <div class="step-body">
+                                            Extract the tarball using
+                                            <pre>$ sudo tar -zx -C /usr \
+        -f haskell-platform-2015.01.2.tar.gz</pre>
+                                        </div>
+                                    </li>
+                                    <!--
+                                    <li>
+                                        <div class="step-number">3</div>
+                                        <div class="step-body">
+                                            <p>Run the installation script with</p>
+                                            <pre>$ ./install-haskell-platform-2015.01.2.sh</pre>
+
+                                            <p>Or instead, if you don't have root access, you can install locally,</p>
+                                            <pre>$ ./install-haskell-platform-2015.01.2.sh --user</pre>
+                                        </div>
+                                    </li>
+                                    -->
+                                </ol>
+                            </div> <!-- #linux-generic -->
+
+                            <div id="linux-ubuntu" class="flavor">
+                                <p>This is Ubuntu</p>
+                            </div> <!-- #linux-ubuntu -->
+                        </div> <!-- linux .content -->
                     </section>
                 </div>
             </div>
