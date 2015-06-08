@@ -10,11 +10,6 @@
     color: #999;
 }
 
-.history:hover td {
-    opacity: 0.3;
-}
-
 .history:hover tr:hover td {
-    opacity: 1.0;
-    color: #000;
+    background-color: #eee;
 }

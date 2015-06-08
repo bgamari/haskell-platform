@@ -79,7 +79,7 @@
                     </div>
 
                     {{#history}}
-                    <table class="history table table-striped">
+                    <table class="history table">
                         <thead>
                             <tr>
                                 <th>&nbsp;</th>
