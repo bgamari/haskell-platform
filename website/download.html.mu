@@ -207,7 +207,7 @@
 
                         <div class="content">
                             <div class="flavor active">
-                                <h2>Select your distribution</h2>
+                                <h3>Select your distribution</h3>
                                 <p>
                                     Please select your Linux distribution in the
                                     list on the right.
