@@ -200,12 +200,12 @@
                             <strong>Choose your distribution</strong>
                             <ul>
                                 <li><a href="#linux-generic"><span class="logo"><i class="fa fa-cogs"></i></span>Generic</a></li>
-                                <li><a href="#linux-ubuntu"><img class="logo" src="img/distro-ubuntu.svg">Ubuntu</a></li>
-                                <li><a href="#linux-debian"><img class="logo" src="img/distro-debian.svg">Debian</a></li>
-                                <li><a href="#linux-redhat"><img class="logo" src="img/distro-redhat.svg">Redhat</a></li>
-                                <li><a href="#linux-fedora"><img class="logo" src="img/distro-fedora.svg">Fedora</a></li>
-                                <li><a href="#linux-mint"><img class="logo" src="img/distro-mint.svg">Mint</a></li>
-                                <li><a href="#linux-gentoo"><img class="logo" src="img/distro-gentoo.svg">Gentoo</a></li>
+                                <li><a href="#linux-ubuntu"><img alt="Ubuntu logo" class="logo" src="img/distro-ubuntu.svg">Ubuntu</a></li>
+                                <li><a href="#linux-debian"><img alt="Debian logo" class="logo" src="img/distro-debian.svg">Debian</a></li>
+                                <li><a href="#linux-redhat"><img alt="Redhat logo" class="logo" src="img/distro-redhat.svg">Redhat</a></li>
+                                <li><a href="#linux-fedora"><img alt="Fedora logo" class="logo" src="img/distro-fedora.svg">Fedora</a></li>
+                                <li><a href="#linux-mint"><img alt="Linux Mint logo" class="logo" src="img/distro-mint.svg">Mint</a></li>
+                                <li><a href="#linux-gentoo"><img alt="Gentoo Linux logo" class="logo" src="img/distro-gentoo.svg">Gentoo</a></li>
                             </ul>
                         </div>
 
