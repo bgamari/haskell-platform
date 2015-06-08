@@ -145,6 +145,7 @@
                                 </li>
                             </ol>
                         </div>
+                        <div class="bottom-rule"></div>
                     </section>
 
                     <section class="downloads-platform container" data-os="windows" id="windows">
@@ -194,6 +195,7 @@
                                 </li>
                             </ol>
                         </div>
+                        <div class="bottom-rule"></div>
                     </section>
 
                     <section class="downloads-platform container" data-os="linux" id="linux">
@@ -355,6 +357,7 @@ $ sudo emerge haskell-platform</pre>
                             </div> <!-- #linux-gentoo -->
 
                         </div> <!-- linux .content -->
+                        <div class="bottom-rule"></div>
                     </section>
                 </div>
             </div>

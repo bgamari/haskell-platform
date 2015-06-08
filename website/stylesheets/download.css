@@ -69,12 +69,27 @@
 .downloads-platform:target .content,
 .downloads-platform.visible .content {
     min-height: 300px;
-    max-height: 2000px; /* web development is still terrible */
+
+    /* transition with max-height, web development is still terrible */
+    max-height: 2000px;
     transition: max-height 1000ms ease 0ms;
+}
+
+#linux.downloads-platform:target .content,
+#linux.downloads-platform.visible .content {
+    /* Linux needs to be taller due to encompass sidebar */
+    min-height: 450px;
 }
 
 .downloads-platform.visible .expander {
     display: none;
+}
+
+.downloads-platform .bottom-rule {
+    width: 30%;
+    padding-top: 30px;
+    margin: auto;
+    border-bottom: 1px solid #aaa;
 }
 
 .platform-name {
