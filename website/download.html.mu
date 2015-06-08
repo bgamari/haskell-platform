@@ -86,6 +86,14 @@
                     instructions to install the Haskell Platform on your system.
                 </div>
 
+                <div class="container platform-toc">
+                    <ul>
+                        <li><a href="#osx"><img src="img/os-osx.svg" alt="Mac OS X logo"> Mac OS X</a></li>
+                        <li><a href="#windows"><img src="img/os-windows.svg" alt="Windows logo"> Windows</a></li>
+                        <li><a href="#linux"><img src="img/os-linux.svg" alt="Linux logo"> Linux</a></li>
+                    </ul>
+                </div>
+
                 <div class="container" id="platforms">
                     <h2 id="other-platforms" class="other-platforms">Other Operating Systems</h2>
                     <section class="downloads-platform container" data-os="osx" id="osx">
@@ -210,7 +218,7 @@
                         </div>
 
                         <div class="content">
-                            <div class="flavor active">
+                            <div id="linux-prompt" class="flavor">
                                 <h3>Select your distribution</h3>
                                 <p>
                                     Please select your Linux distribution in the
@@ -224,6 +232,7 @@
                             </div>
 
                             <div id="linux-generic" class="flavor">
+                                <h3>Generic Linux</h3>
                                 <p>
                                     This is a <strong>generic</strong>
                                     distribution of the Haskell Platform. While
@@ -285,6 +294,7 @@
                             </div> <!-- #linux-generic -->
 
                             <div id="linux-ubuntu" class="flavor">
+                                <h3>Ubuntu</h3>
                                 <p>Good news! Haskell Platform is already
                                     available in your distribution's package
                                     <a href="http://packages.ubuntu.com/search?keywords=haskell-platform">repository</a>.</p>
@@ -293,6 +303,7 @@
                             </div> <!-- #linux-ubuntu -->
 
                             <div id="linux-debian" class="flavor">
+                                <h3>Debian</h3>
                                 <p>Good news! Haskell Platform is already
                                     available in your distribution's package
                                     <a href="https://packages.debian.org/search?keywords=haskell-platform">repository</a>.</p>
@@ -301,6 +312,7 @@
                             </div> <!-- #linux-debian -->
 
                             <div id="linux-mint" class="flavor">
+                                <h3>Linux Mint</h3>
                                 <p>Good news! Haskell Platform is already
                                     available in your distribution's package
                                     <a href="http://community.linuxmint.com/software/view/haskell-platform">repository</a>.</p>
@@ -309,6 +321,7 @@
                             </div> <!-- #linux-mint -->
 
                             <div id="linux-redhat" class="flavor">
+                                <h3>Redhat</h3>
                                 <p>Good news! Haskell Platform is already available in
                                 your distribution's package repository.</p>
                                 <p>Simply run,</p>
@@ -316,6 +329,7 @@
                             </div> <!-- #linux-redhat -->
 
                             <div id="linux-fedora" class="flavor">
+                                <h3>Fedora</h3>
                                 <p>Good news! Haskell Platform is already available in
                                     your distribution's package
                                     <a href="https://admin.fedoraproject.org/pkgdb/package/haskell-platform/">repository</a>.</p>
@@ -324,6 +338,7 @@
                             </div> <!-- #linux-fedora -->
 
                             <div id="linux-gentoo" class="flavor">
+                                <h3>Gentoo</h3>
                                 <p>Good news! Haskell Platform is already
                                     available in your distribution's package repository.</p>
                                 <p>

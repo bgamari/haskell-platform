@@ -1,3 +1,8 @@
+// no-script fallback
+$(document).ready(function() {
+    $('body').addClass('js');
+});
+
 $(document).ready(function() {
     $('.expandable').each(function() {
         var $this = $(this);
@@ -82,6 +87,7 @@ $(document).ready(function() {
 
 // Linux flavors
 $(document).ready(function() {
+    $('#linux-prompt').addClass('active');
     $('#linux .flavors li a').click(function() {
         var $this = $(this);
         var distro = $(this).attr('href');

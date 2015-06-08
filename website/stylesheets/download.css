@@ -149,7 +149,7 @@ ul.hashes code {
     display: none;
 }
 
-.visible .sidebar {
+.visible .sidebar, :target .sidebar {
     display: block;
 }
 
@@ -197,11 +197,7 @@ ul.hashes code {
     color: #000;
 }
 
-.flavor {
-    display: none;
-}
-
-.flavor.active {
+.js .flavor.active {
     display: block;
 }
 
@@ -212,6 +208,39 @@ ul.hashes code {
     color: #ddd;
     font-size: 100px;
 }
+
+/* platform table of contents for no-script users*/
+body.js .platform-toc {
+    display: none;
+}
+
+.platform-toc ul {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.platform-toc ul li {
+    list-style: none;
+    display: inline-block;
+    min-width: 150px;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.platform-toc ul li img {
+    width: 50px;
+    margin: 5px auto;
+    display: block;
+}
+
+/* no-script fallbacks */
+.js .flavor {display: none;}
+.js .flavor h3 {display: none;}
+
+body:not(.js) .downloads-platform .sidebar.flavors {display: block;}
+body:not(.js) .downloads-platform .expander {display: none;}
+body:not(.js) .downloads-platform .content {max-height: 9000px;}
 
 /*
  * expanding expander arrow
