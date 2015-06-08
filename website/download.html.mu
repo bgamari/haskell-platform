@@ -203,6 +203,9 @@
                                 <li><a href="#linux-ubuntu"><img class="logo" src="img/distro-ubuntu.svg">Ubuntu</a></li>
                                 <li><a href="#linux-debian"><img class="logo" src="img/distro-debian.svg">Debian</a></li>
                                 <li><a href="#linux-redhat"><img class="logo" src="img/distro-redhat.svg">Redhat</a></li>
+                                <li><a href="#linux-fedora"><img class="logo" src="img/distro-fedora.svg">Fedora</a></li>
+                                <li><a href="#linux-mint"><img class="logo" src="img/distro-mint.svg">Mint</a></li>
+                                <li><a href="#linux-gentoo"><img class="logo" src="img/distro-gentoo.svg">Gentoo</a></li>
                             </ul>
                         </div>
 
@@ -282,8 +285,60 @@
                             </div> <!-- #linux-generic -->
 
                             <div id="linux-ubuntu" class="flavor">
-                                <p>This is Ubuntu</p>
+                                <p>Good news! Haskell Platform is already
+                                    available in your distribution's package
+                                    <a href="http://packages.ubuntu.com/search?keywords=haskell-platform">repository</a>.</p>
+                                <p>Simply run,</p>
+                                <pre>$ sudo apt-get install haskell-platform</pre>
                             </div> <!-- #linux-ubuntu -->
+
+                            <div id="linux-debian" class="flavor">
+                                <p>Good news! Haskell Platform is already
+                                    available in your distribution's package
+                                    <a href="https://packages.debian.org/search?keywords=haskell-platform">repository</a>.</p>
+                                <p>Simply run,</p>
+                                <pre>$ sudo apt-get install haskell-platform</pre>
+                            </div> <!-- #linux-debian -->
+
+                            <div id="linux-mint" class="flavor">
+                                <p>Good news! Haskell Platform is already
+                                    available in your distribution package
+                                    <a href="http://community.linuxmint.com/software/view/haskell-platform">repository</a>.</p>
+                                <p>Simply run,</p>
+                                <pre>$ sudo apt-get install haskell-platform</pre>
+                            </div> <!-- #linux-mint -->
+
+                            <div id="linux-redhat" class="flavor">
+                                <p>Good news! Haskell Platform is already available in
+                                your distribution's package repository.</p>
+                                <p>Simply run,</p>
+                                <pre>$ sudo yum install haskell-platform</pre>
+                            </div> <!-- #linux-redhat -->
+
+                            <div id="linux-fedora" class="flavor">
+                                <p>Good news! Haskell Platform is already available in
+                                    your distribution's package
+                                    <a href="https://admin.fedoraproject.org/pkgdb/package/haskell-platform/">repository</a>.</p>
+                                <p>Simply run,</p>
+                                <pre>$ sudo yum install haskell-platform</pre>
+                            </div> <!-- #linux-fedora -->
+
+                            <div id="linux-gentoo" class="flavor">
+                                <p>Good news! Haskell Platform is already
+                                    available in your distribution's package repository.</p>
+                                <p>
+                                    While there is a <code>haskell-platform</code> ebuild
+                                    included in the main Portage tree,
+                                    it is recommended that one uses the more
+                                    up-to-date <a href="https://github.com/gentoo-haskell/gentoo-haskell/tree/master/dev-haskell/haskell-platform"><code>gentoo-haskell</code></a>
+                                    overlay. This can be done using <code>layman</code>,</p>
+                                <pre>
+$ sudo layman -a haskell
+$ sudo emerge haskell-platform</pre>
+                                <p>More details can be found in the
+                                    <a href="https://wiki.haskell.org/Gentoo/HaskellPlatform">Wiki</a>.</p>
+                            </div> <!-- #linux-gentoo -->
+
                         </div> <!-- linux .content -->
                     </section>
                 </div>
