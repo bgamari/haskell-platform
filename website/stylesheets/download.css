@@ -66,6 +66,7 @@
     transition: max-height 800ms ease;
 }
 
+.downloads-platform:target .content,
 .downloads-platform.visible .content {
     min-height: 300px;
     max-height: 2000px; /* web development is still terrible */
