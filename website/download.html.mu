@@ -96,54 +96,83 @@
 
                 <div class="container" id="platforms">
                     <h2 id="other-platforms" class="other-platforms">Other Operating Systems</h2>
+
                     <section class="downloads-platform container" data-os="osx" id="osx">
-                        <div class="platform-name"><img src="img/os-osx.svg" alt="Mac OS X logo"> <h2>Mac OS X</h2></div>
+                        <div class="platform-name"><img src="img/os-osx.svg" alt="Mac OS X logo"><h2>Mac OS X</h2></div>
                         <a class="expander" href="#osx"><div>
                             <img src="img/expand-piece.svg" class="expand-1">
                             <img src="img/expand-piece.svg" class="expand-2">
                             <img src="img/expand-piece.svg" class="expand-3">
                         </div></a>
+
+                        <div class="sidebar flavors">
+                            <strong>Choose your package manager</strong>
+                            <ul>
+                                <li class="active"><a href="#osx-none"><span class="logo"><i class="fa fa-cogs"></i></span>None</a></li>
+                                <li><a href="#osx-macports"><img alt="MacPorts logo" class="logo" src="img/distro-macports.png">MacPorts</a></li>
+                            </ul>
+                        </div>
+
                         <div class="content">
-                            <p>
-                                The latest version of the Haskell Platform for Mac OS X is
-                                <strong>{{hpVersion}}</strong>. Note that the
-                                Haskell Platform is only compatible with
-                                <strong>OS X 10.6 and later</strong>.</p>
-                            <p> To get started perform these steps,</p>
+                            <div id="osx-none" class="flavor active">
+                                <p>
+                                    The latest version of the Haskell Platform for Mac OS X is
+                                    <strong>{{hpVersion}}</strong>. Note that the
+                                    Haskell Platform is only compatible with
+                                    <strong>OS X 10.6 and later</strong>.
+                                </p>
+                                <p>
+                                    These packages are for Mac OS X systems not
+                                    using a package manager. If you would rather
+                                    install with MacPorts then select the
+                                    appropriate option to the right.
+                                </p>
+                                <p> To get started perform these steps,</p>
 
-                            <ol class="install-steps">
-                                <li>
-                                    <div class="step-number">1</div>
-                                    <div class="step-body">
-                                        <p>Download the installer disk image,</p>
-                                        {{#current}} {{#files}} {{#isOSX}}
-                                        <div class="download-btn">
-                                            <a href="{{url}}" class="btn btn-haskell" role="button">
-                                                <i class="fa fa-download"></i> Download ({{archBits}} bit)
-                                            </a>
-                                        </div>
-                                        {{/isOSX}} {{/files}} {{/current}}
+                                <ol class="install-steps">
+                                    <li>
+                                        <div class="step-number">1</div>
+                                        <div class="step-body"
+                                            <p>Download the installer disk image,</p>
+                                            {{#current}} {{#files}} {{#isOSX}}
+                                            <div class="download-btn">
+                                                <a href="{{url}}" class="btn btn-haskell" role="button">
+                                                    <i class="fa fa-download"></i> Download ({{archBits}} bit)
+                                                </a>
+                                            </div>
+                                            {{/isOSX}} {{/files}} {{/current}}
 
-                                        <div class="download-hash">
-                                            You can verify the authenticity of this file by
-                                            checking its <strong>SHA-1</strong> hash,
-                                            <ul class="hashes">
-                                                {{#current}} {{#files}} {{#isOSX}}
-                                                <li>{{archBits}} bit: <input readonly class="file-hash" type="text" value="{{mHash}}"></li>
-                                                {{/isOSX}} {{/files}} {{/current}}
-                                            </ul>
+                                            <div class="download-hash">
+                                                You can verify the authenticity of this file by
+                                                checking its <strong>SHA-1</strong> hash,
+                                                <ul class="hashes">
+                                                    {{#current}} {{#files}} {{#isOSX}}
+                                                    <li>{{archBits}} bit: <input readonly class="file-hash" type="text" value="{{mHash}}"></li>
+                                                    {{/isOSX}} {{/files}} {{/current}}
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="step-number">2</div>
-                                    <div class="step-body">Run the installer.</div>
-                                </li>
-                                <li>
-                                    <div class="step-number">3</div>
-                                    <div class="step-body">Follow the instructions.</div>
-                                </li>
-                            </ol>
+                                    </li>
+                                    <li>
+                                        <div class="step-number">2</div>
+                                        <div class="step-body">Run the installer.</div>
+                                    </li>
+                                    <li>
+                                        <div class="step-number">3</div>
+                                        <div class="step-body">Follow the instructions.</div>
+                                    </li>
+                                </ol>
+                            </div> <!-- #osx-none -->
+
+                            <div id="osx-macports" class="flavor">
+                                <h3>MacPorts</h3>
+                                <p>To install Haskell Platform with
+                                    <a href="https://trac.macports.org/browser/trunk/dports/devel/haskell-platform/Portfile">MacPorts</a>,
+                                    simply run,
+                                </p>
+                                <pre>$ sudo port install haskell-platform</pre>
+                            </div> <!-- #osx-macports -->
+
                         </div>
                         <div class="bottom-rule"></div>
                     </section>

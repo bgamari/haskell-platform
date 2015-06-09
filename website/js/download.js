@@ -92,3 +92,19 @@ $(document).ready(function() {
         $('html, body').scrollTop($('#linux').offset().top);
     });
 });
+
+// Mac OS X flavors
+$(document).ready(function() {
+    $('#osx .flavors li a').click(function(event) {
+        event.preventDefault();
+        var $this = $(this);
+        var distro = $(this).attr('href');
+        $(this).parents('.sidebar').addClass('chosen');
+        $(this).parents('ul').children('li').removeClass('active');
+        $(this).parents('li').addClass('active');
+        $('#osx .flavor').removeClass('active');
+        $(distro).addClass('active');
+
+        $('html, body').scrollTop($('#osx').offset().top);
+    });
+});
