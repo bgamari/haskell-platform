@@ -6,8 +6,8 @@
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/contents.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" >
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/fonts/Haskell/style.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/hl.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/contents.css">
