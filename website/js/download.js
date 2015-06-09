@@ -79,7 +79,8 @@ $(document).ready(function() {
 // Linux flavors
 $(document).ready(function() {
     $('#linux-prompt').addClass('active');
-    $('#linux .flavors li a').click(function() {
+    $('#linux .flavors li a').click(function(event) {
+        event.preventDefault();
         var $this = $(this);
         var distro = $(this).attr('href');
         $(this).parents('.sidebar').addClass('chosen');
@@ -88,9 +89,6 @@ $(document).ready(function() {
         $('#linux .flavor').removeClass('active');
         $(distro).addClass('active');
 
-        $('html,body').animate({
-            scrollTop: $('#linux').offset().top
-        }, 1000);
-        return true;
+        $('html, body').scrollTop($('#linux').offset().top);
     });
 });
