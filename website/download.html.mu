@@ -247,8 +247,10 @@
                                 <li><a href="#linux-gentoo"><img alt="Gentoo Linux logo" class="logo" src="img/distro-gentoo.svg">Gentoo</a></li>
                             </ul>
 
-                            <p class="select-generic">If you can't find your distribution then
-                                select <strong>Generic</strong>.</p>
+                            <p class="select-generic">
+                                If you can't find your distribution then select
+                                <strong>Generic</strong>.
+                            </p>
                         </div>
 
                         <div class="content">
