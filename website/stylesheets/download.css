@@ -88,7 +88,8 @@
     }
 }
 
-.downloads-platform.visible .expander {
+.downloads-platform.visible .expander,
+.downloads-platform:target .expander {
     display: none;
 }
 
