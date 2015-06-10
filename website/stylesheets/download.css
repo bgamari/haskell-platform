@@ -81,6 +81,13 @@
     min-height: 450px;
 }
 
+/* Hide "choose your distribution prompt on narrow screens */
+@media (max-width: 1000px) {
+    #linux-prompt.active {
+        display: none;
+    }
+}
+
 .downloads-platform.visible .expander {
     display: none;
 }
@@ -156,19 +163,30 @@ ul.hashes input.file-hash {
 /*
  * Operating system flavor list
  */
-.sidebar {
-    width: 300px;
-    right: -100px;
-    position: absolute;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-left: 1px solid #ddd;
-    display: none;
+@media (min-width: 1000px) {
+    .sidebar {
+        width: 300px;
+        right: -100px;
+        position: absolute;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-left: 1px solid #ddd;
+        display: none;
+    }
+
+    .visible .sidebar, :target .sidebar {
+        display: block;
+    }
 }
 
-.visible .sidebar, :target .sidebar {
-    display: block;
+/* Display sidebar in main flow on narrow screens */
+@media (max-width: 1000px) {
+    .sidebar {
+        text-align: center;
+        margin: auto;
+        padding: 40px 0;
+    }
 }
 
 .sidebar.flavors.chosen ul li {opacity: 0.3;}
