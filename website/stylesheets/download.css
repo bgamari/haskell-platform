@@ -60,7 +60,6 @@
 
 .downloads-platform .content {
     margin: auto;
-    width: 500px;
     overflow-y: hidden;
     max-height: 0;
     transition: max-height 800ms ease;
@@ -152,7 +151,6 @@ ul.hashes li {
 }
 
 ul.hashes input.file-hash {
-    width: 300px;
     text-overflow: ellipsis;
     whitespace: nowrap;
     overflow: hidden;
