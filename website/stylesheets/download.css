@@ -75,10 +75,12 @@
     transition: max-height 1000ms ease 0ms;
 }
 
-#linux.downloads-platform:target .content,
-#linux.downloads-platform.visible .content {
-    /* Linux needs to be taller due to encompass sidebar */
-    min-height: 450px;
+@media (min-width: 1000px) {
+    #linux.downloads-platform:target .content,
+    #linux.downloads-platform.visible .content {
+        /* Linux needs to be taller due to encompass sidebar */
+        min-height: 450px;
+    }
 }
 
 /* Hide "choose your distribution prompt on narrow screens */
@@ -164,6 +166,14 @@ ul.hashes input.file-hash {
 /*
  * Operating system flavor list
  */
+.sidebar {
+    display: none;
+}
+
+.visible .sidebar, :target .sidebar {
+    display: block;
+}
+
 @media (min-width: 1000px) {
     .sidebar {
         width: 300px;
@@ -173,11 +183,6 @@ ul.hashes input.file-hash {
         padding-top: 20px;
         padding-bottom: 20px;
         border-left: 1px solid #ddd;
-        display: none;
-    }
-
-    .visible .sidebar, :target .sidebar {
-        display: block;
     }
 }
 
