@@ -245,6 +245,7 @@
                                 <li><a href="#linux-fedora"><img alt="Fedora logo" class="logo" src="img/distro-fedora.svg">Fedora</a></li>
                                 <li><a href="#linux-mint"><img alt="Linux Mint logo" class="logo" src="img/distro-mint.svg">Mint</a></li>
                                 <li><a href="#linux-gentoo"><img alt="Gentoo Linux logo" class="logo" src="img/distro-gentoo.svg">Gentoo</a></li>
+                                <li><a href="#linux-source"><span class="logo"><i class="fa fa-code"></i></span>From Source</a></li>
                             </ul>
 
                             <p class="select-generic">
@@ -385,6 +386,45 @@ $ sudo emerge haskell-platform</pre>
                                 <p>More details can be found in the
                                     <a href="https://wiki.haskell.org/Gentoo/HaskellPlatform">Wiki</a>.</p>
                             </div> <!-- #linux-gentoo -->
+
+                            <div id="linux-source" class="flavor">
+                                <h3>Build from source</h3>
+                                <p>
+                                    If we don't have a binary package suitable for your distribution
+                                    you can build the Haskell Platform from source.
+                                </p>
+                                <ol class="install-steps">
+                                    <li>
+                                        <div class="step-number">1</div>
+                                        <div class="step-body">
+                                            <p>Download and extract the source tarball,</p>
+                                            {{#current}} {{#files}} {{#isSource}}
+                                            <div class="download-btn">
+                                                <a href="{{url}}" class="btn btn-haskell" role="button">
+                                                    <i class="fa fa-download"></i> Download
+                                                </a>
+                                            </div>
+                                            {{/isSource}} {{/files}} {{/current}}
+
+                                            <div>
+                                                You can verify the authenticity of this file by
+                                                checking its <strong>SHA-1</strong> hash,
+                                                <ul class="hashes">
+                                                    {{#current}} {{#files}} {{#isSource}}
+                                                    <li><input readonly class="file-hash" type="text" value="{{mHash}}"></li>
+                                                    {{/isSource}} {{/files}} {{/current}}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="step-number">2</div>
+                                        <div class="step-body">
+                                            <p>See the <code>README</code> file for build instructions.</p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div> <!-- #linux-source -->
 
                         </div> <!-- linux .content -->
                         <div class="bottom-rule"></div>
