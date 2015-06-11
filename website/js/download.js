@@ -90,6 +90,7 @@ $(document).ready(function() {
         $(distro).addClass('active');
 
         $('html, body').scrollTop($('#linux').offset().top);
+        window.history.replaceState({}, '', distro);
     });
 });
 
@@ -106,5 +107,6 @@ $(document).ready(function() {
         $(distro).addClass('active');
 
         $('html, body').scrollTop($('#osx').offset().top);
+        window.history.replaceState({}, '', distro);
     });
 });
