@@ -79,34 +79,24 @@ $(document).ready(function() {
 // Linux flavors
 $(document).ready(function() {
     $('#linux-prompt').addClass('active');
-    $('#linux .flavors li a').click(function(event) {
-        event.preventDefault();
-        var $this = $(this);
-        var distro = $(this).attr('href');
-        $(this).parents('.sidebar').addClass('chosen');
-        $(this).parents('ul').children('li').removeClass('active');
-        $(this).parents('li').addClass('active');
-        $('#linux .flavor').removeClass('active');
-        $(distro).addClass('active');
-
-        $('html, body').scrollTop($('#linux').offset().top);
-        window.history.replaceState({}, '', distro);
-    });
 });
 
-// Mac OS X flavors
+// Operating system flavors
 $(document).ready(function() {
-    $('#osx .flavors li a').click(function(event) {
+    $('.flavors li a').click(function(event) {
         event.preventDefault();
         var $this = $(this);
-        var distro = $(this).attr('href');
-        $(this).parents('.sidebar').addClass('chosen');
-        $(this).parents('ul').children('li').removeClass('active');
-        $(this).parents('li').addClass('active');
-        $('#osx .flavor').removeClass('active');
+        var distro = $this.attr('href');
+        var $platform = $this.parents('.downloads-platform');
+
+        $this.parents('.sidebar').addClass('chosen');
+        $this.parents('ul').children('li').removeClass('active');
+        $this.parents('li').addClass('active');
+
+        $platform.find('.flavor').removeClass('active');
         $(distro).addClass('active');
 
-        $('html, body').scrollTop($('#osx').offset().top);
+        $('html, body').scrollTop($platform.offset().top);
         window.history.replaceState({}, '', distro);
     });
 });
